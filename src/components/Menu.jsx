@@ -1,9 +1,8 @@
 import { useState } from 'react';
 import logo from '../assets/logodagstra.png';
-import { navLinks } from '../constants';
 
 function Menu() {
-    const [active, setActive] = useState('Accueil');
+    const [hidden, setHidden] = useState(false);
     const [toggle, setToggle] = useState(false);
     return (
         <>
@@ -21,7 +20,7 @@ function Menu() {
                             name="call"
                             class="text-white text-base"
                         ></ion-icon>
-                        <a href="mailto:699999999">699999999</a>
+                        <a href="tel:699999999">699999999</a>
                     </p>
                     <p className="text-white font-semibold text-xs flex items-center gap-1">
                         <ion-icon
@@ -68,23 +67,92 @@ function Menu() {
                                 : 'absolute left-0 flex flex-col top-[100%] bg-white w-full shadow-lg z-10 opacity-[1] visible pointer-events-auto transition-opacity pl-5 py-4 gap-5 sm:pl-[50px]'
                         } lg:flex lg:gap-8 lg:static lg:opacity-[1] lg:visible lg:pointer-events-auto`}
                     >
-                        {navLinks.map((nav, index) => (
-                            <li
-                                key={nav.id}
-                                onClick={() => setActive(nav.title)}
+                        {/* <li key={nav.id} onClick={() => setActive(nav.title)}> */}
+                        <li>
+                            <a
+                                href="#"
+                                className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
                             >
-                                <a
-                                    href="#"
-                                    className={`${
-                                        active === nav.title
-                                            ? ' text-[#6a6796]'
-                                            : 'text-primarycolor'
-                                    } hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
-                                >
-                                    {nav.title}
-                                </a>
-                            </li>
-                        ))}
+                                Accueil
+                            </a>
+                        </li>
+                        <li className="relative">
+                            <a
+                                onClick={() => setHidden(!hidden)}
+                                href="#"
+                                className={` hover:text-[#6a6796]  font-medium nav__link text-lg flex items-center`}
+                            >
+                                <span>Services</span>
+                                <ion-icon
+                                    name="chevron-down"
+                                    class="hidden lg:inline-block"
+                                ></ion-icon>
+                            </a>
+                            <ul
+                                className={` ${
+                                    !hidden
+                                        ? 'lg:opacity-0 lginvisible lg:pointer-events-none transition-opacity ease-in-out'
+                                        : ' opacity-1 visible pointer-events-auto '
+                                } submenu pb-0 pt-4 px-8 lg:absolute top-[114%] left-0 bg-white lg:p-8 lg:shadow-[0_0.5px_12px_-1px_rgba(0,0,0,0.3)] rounded-sm flex flex-col gap-4`}
+                            >
+                                <li>
+                                    <a
+                                        href="#"
+                                        className="hover:text-[#6a6796]  font-normal nav__link text-md "
+                                    >
+                                        Transformation Digital
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        className="hover:text-[#6a6796]  font-normal nav__link text-md "
+                                    >
+                                        Video Surveillance
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        className="hover:text-[#6a6796]  font-normal nav__link text-md "
+                                    >
+                                        Reseau
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        className="hover:text-[#6a6796]  font-normal nav__link text-md "
+                                    >
+                                        Data Management
+                                    </a>
+                                </li>
+                                <li>
+                                    <a
+                                        href="#"
+                                        className="hover:text-[#6a6796]  font-normal nav__link text-lg "
+                                    >
+                                        Formation
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                className={` hover:text-[#6a6796] font-medium nav__link text-lg inline-block`}
+                            >
+                                Réalisation
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
+                            >
+                                Contact
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </nav>
