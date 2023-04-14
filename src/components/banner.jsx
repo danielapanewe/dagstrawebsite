@@ -1,93 +1,27 @@
-// import React from 'react';
-// import { Splide, SplideSlide } from '@splidejs/react-splide';
-// import '@splidejs/react-splide/css';
-// import banner1 from '../assets/banner1.jpg';
-// import banner2 from '../assets/banner2.jpg';
-// import banner3 from '../assets/banner3.jpg';
-
-// function banner() {
-//     return (
-//         <section className="  top-0 z-[-1] w-full">
-//             <Splide
-//                 options={{
-//                     rewind: true,
-//                     gap: '1rem',
-//                 }}
-//                 aria-label="Banner images"
-//             >
-//                 <SplideSlide>
-//                     <div className="slide__text absolute top-[50%] translate-x-[-50%] left-[35%] translate-y-[-50%] flex flex-col gap-6">
-//                         <h2 className="font-bold text-6xl text-primarycolor">
-//                             Growth Partners
-//                         </h2>
-//                         <p className="text-primarycolor">
-//                             We look forward to help you in taking your company
-//                             to new height.
-//                         </p>
-//                         <a href="#" className="btn bg-primarycolor text-white self-start">
-//                             Contacter
-//                         </a>
-//                     </div>
-//                     <img src={banner1} alt="Image 1"  />
-//                 </SplideSlide>
-//                 <SplideSlide>
-//                     <div className="slide__text absolute top-[50%] translate-x-[-50%] left-[35%] translate-y-[-50%]  flex flex-col gap-6">
-//                         <h2 className="font-bold text-6xl text-primarycolor">
-//                             Helping Leaders
-//                         </h2>
-//                         <p className="text-primarycolor">
-//                             We look forward to help you in taking your company
-//                             to new height.
-//                         </p>
-//                         <a href="#" className="btn bg-primarycolor text-white self-start">
-//                             Contacter
-//                         </a>
-//                     </div>
-//                     <img src={banner2} alt="Image 2" />
-//                 </SplideSlide>
-//                 <SplideSlide>
-//                     <div className="slide__text absolute top-[50%] translate-x-[-50%] left-[35%] translate-y-[-50%] flex flex-col gap-6">
-//                         <h2 className="font-bold text-6xl text-primarycolor">
-//                             Expert Consultants
-//                         </h2>
-//                         <p className="text-primarycolor">
-//                             Over 10 years of experience in helping clients
-//                             finding comprehensive solutions.
-//                         </p>
-//                         <a href="#" className="btn bg-primarycolor text-white self-start">
-//                             Contacter
-//                         </a>
-//                     </div>
-//                     <img src={banner3} alt="Image 3" />
-//                 </SplideSlide>
-//             </Splide>
-//         </section>
-//     );
-// }
-
-// export default banner;
-
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
+import imagebannerone from '../assets/banner1.jpg'
+import imagebannertwo from '../assets/banner2.jpg'
+import imagebannerthree from '../assets/banner3.jpg'
 
 const fadeImages = [
     {
-        url: '/src/assets/banner1.jpg',
+        url: `${imagebannerone}`,
         title: '  Growth Partners',
         description:
             ' We look forward to help you in taking your company to new height.',
         linktext: ' Contacter',
     },
     {
-        url: '/src/assets/banner2.jpg',
+        url: `${imagebannertwo}`,
         title: ' Helping Leaders',
         description:
             ' We look forward to help you in taking your company to new height.',
         linktext: ' Contacter',
     },
     {
-        url: '/src/assets/banner3.jpg',
+        url: `${imagebannerthree}`,
         title: '   Expert Consultants',
         description:
             'Over 10 years of experience in helping clients finding comprehensive solutions.',
@@ -95,7 +29,7 @@ const fadeImages = [
     },
 ];
 
-const Slideshow = () => {
+const Banner = () => {
     return (
         <div className="slide-container mt-[-4rem]">
             <Fade>
@@ -130,4 +64,4 @@ const Slideshow = () => {
     );
 };
 
-export default Slideshow;
+export default Banner;

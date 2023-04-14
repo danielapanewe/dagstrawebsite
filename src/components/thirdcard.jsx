@@ -1,4 +1,4 @@
-const thirdcard = ({image,alt,nom,position,description}) => (
+const Thirdcard = ({ image, alt, nom, position, description }) => (
     <div className="card__item shadow-xl rounded-lg">
         <img src={image} alt={alt} />
         <div className="card__body p-3 sm:p-5 lg:p-7">
@@ -7,8 +7,6 @@ const thirdcard = ({image,alt,nom,position,description}) => (
             <p className="pt-4">{description}</p>
         </div>
     </div>
-)
+);
 
-
-
-export default thirdcard
+export default Thirdcard;

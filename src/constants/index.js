@@ -1,3 +1,6 @@
+import imageemployeeone from '../assets/portrait-3.jpg';
+import imageemployeetwo from '../assets/portrait-4.jpg';
+import imageemployeethree from '../assets/portrait-5.jpg';
 export const navLinks = [
     {
         id: 'accueil',
@@ -50,8 +53,8 @@ export const featuresItem = [
 export const employee = [
     {
         id: 'employee1',
-        image:'/src/assets/portrait-3.jpg',
-        alt:'employé 1',
+        image: `${imageemployeeone}`,
+        alt: 'employé 1',
         name: 'Legartha Mantana',
         position: 'Brand Management Consultant',
         description:
@@ -59,8 +62,8 @@ export const employee = [
     },
     {
         id: 'employee2',
-        image:'/src/assets/portrait-4.jpg',
-        alt:'employé 1',
+        image: `${imageemployeetwo}`,
+        alt: 'employé 1',
         name: 'John Snow',
         position: 'Business Analyst',
         description:
@@ -68,8 +71,8 @@ export const employee = [
     },
     {
         id: 'employee3',
-        image:'/src/assets/portrait-5.jpg',
-        alt:'employé 1',
+        image: `${imageemployeethree}`,
+        alt: 'employé 1',
         name: 'Ragner Lothbrok',
         position: 'Business Consultant',
         description:

@@ -1,6 +1,6 @@
 import logoblanc from '../assets/logoblanc.png';
 
-function footer() {
+function Footer() {
     return (
         <footer className="bg-primarycolor mt-12 pt-14">
             <div className="containeur">
@@ -104,4 +104,4 @@ function footer() {
     );
 }
 
-export default footer;
+export default Footer;

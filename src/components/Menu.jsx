@@ -1,8 +1,8 @@
 import { useState } from 'react';
-import logo from '../../assets/logodagstra.png';
-import { navLinks } from '../../constants';
+import logo from '../assets/logodagstra.png';
+import { navLinks } from '../constants';
 
-function menu() {
+function Menu() {
     const [active, setActive] = useState('Accueil');
     const [toggle, setToggle] = useState(false);
     return (
@@ -92,4 +92,4 @@ function menu() {
     );
 }
 
-export default menu;
+export default Menu;
