@@ -21,7 +21,7 @@ function Menu() {
                             name="call"
                             class="text-white text-base"
                         ></ion-icon>
-                        <a href="mailto:699999999">699999999</a>
+                        <a href="mailto:699999999">699 99 99 99</a>
                     </p>
                     <p className="text-white font-semibold text-xs flex items-center gap-1">
                         <ion-icon

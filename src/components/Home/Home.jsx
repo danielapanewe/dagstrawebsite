@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from '../menu';
+import Menu from '../Menu';
 import Banner from '../banner';
 import About from '../About';
 import Ourservices from '../Ourservices';
@@ -7,7 +7,7 @@ import Whychooseus from '../Whychooseus';
 import Calltoaction from '../Calltoaction';
 import Ourteam from '../Ourteam';
 import Counter from '../Counter';
-import Footer from '../Footer';
+import Footer from '../footer';
 
 function Home() {
     return (
@@ -20,7 +20,7 @@ function Home() {
         <Calltoaction/>
         <Ourteam/>
         <Counter/>
-        <Footer/>
+        <Footer />
         </>
     );
 }
