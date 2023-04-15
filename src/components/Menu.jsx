@@ -1,9 +1,11 @@
 import { useState } from 'react';
 import logo from '../assets/logodagstra.png';
+import { useNavigate, NavLink } from 'react-router-dom';
 
 function Menu() {
     const [hidden, setHidden] = useState(false);
     const [toggle, setToggle] = useState(false);
+    const navigate = useNavigate();
     return (
         <>
             <div className="nav__first w-full bg-primarycolor relative ">
@@ -20,7 +22,7 @@ function Menu() {
                             name="call"
                             class="text-white text-base"
                         ></ion-icon>
-                        <a href="tel:699999999">699999999</a>
+                        <a href="mailto:699999999">699 99 99 99</a>
                     </p>
                     <p className="text-white font-semibold text-xs flex items-center gap-1">
                         <ion-icon
@@ -33,9 +35,9 @@ function Menu() {
             </div>
             <nav className="sticky top-0  bg-[rgba(255,255,255,0.85)] z-[500]">
                 <div className="flex  justify-between w-full containeur items-center ">
-                    <a href="#" className="pt-2">
+                    <NavLink to="/" className="pt-2">
                         <img src={logo} alt="logo" className="w-14" />
-                    </a>
+                    </NavLink>
                     <div
                         className="lg:hidden relative w-[3rem] h-[3rem] burgermenu cursor-pointer"
                         onClick={() => setToggle(!toggle)}
@@ -69,12 +71,16 @@ function Menu() {
                     >
                         {/* <li key={nav.id} onClick={() => setActive(nav.title)}> */}
                         <li>
-                            <a
-                                href="#"
-                                className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
+                            <NavLink
+                                to="/"
+                                // className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
+                                className={({ isActive }) =>
+                                    isActive ? 'text-primarycolor font-medium inline-block text-lg' : 'hover:text-[#6a6796] font-medium inline-block text-lg'
+                                }
+                             
                             >
                                 Accueil
-                            </a>
+                            </NavLink>
                         </li>
                         <li className="relative">
                             <a
@@ -146,12 +152,16 @@ function Menu() {
                             </a>
                         </li>
                         <li>
-                            <a
-                                href="#"
-                                className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
+                        <NavLink
+                                to="/contact"
+                                // className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
+                                className={({ isActive }) =>
+                                    isActive ? 'text-primarycolor font-medium inline-block text-lg' : 'hover:text-[#6a6796] font-medium inline-block text-lg'
+                                }
+                             
                             >
                                 Contact
-                            </a>
+                            </NavLink>
                         </li>
                     </ul>
                 </div>

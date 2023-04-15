@@ -1,5 +1,5 @@
 import React from 'react';
-import Menu from '../menu';
+import Menu from '../Menu';
 import Banner from '../banner';
 import About from '../About';
 import Ourservices from '../Ourservices';
@@ -8,19 +8,21 @@ import Calltoaction from '../Calltoaction';
 import Ourteam from '../Ourteam';
 import Counter from '../Counter';
 import Footer from '../Footer';
+import Partners from '../Partners';
 
 function Home() {
     return (
         <>
-        <Menu />
-        <Banner />
-        <About/>
-        <Ourservices/>
-        <Whychooseus/>
-        <Calltoaction/>
-        <Ourteam/>
-        <Counter/>
-        <Footer/>
+            <Menu />
+            <Banner />
+            <About />
+            <Ourservices />
+            <Whychooseus />
+            <Calltoaction />
+            <Ourteam />
+            <Counter />
+            <Partners />
+            <Footer />
         </>
     );
 }

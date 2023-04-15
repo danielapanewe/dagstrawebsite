@@ -26,56 +26,66 @@ function Counter() {
                 </h2>
                 <div className="grid grid-cols-2  lg:grid-cols-4">
                     <p className="text-white flex flex-col ">
+                      <span  className="text-4xl font-bold text-white ">
+                        +
                         {counterOn && (
                             <CountUp
                                 start={0}
-                                end={52}
+                                end={2500}
                                 duration={2}
                                 delay={0}
-                                className="text-4xl font-bold text-white "
+                               
                             />
                         )}
+                      </span>
 
-                        <span className="text-normal ">Cases Solved</span>
+                        <span className="text-normal ">Cases resolved</span>
                     </p>
                     <p className="text-white flex flex-col">
+                        <span   className="text-4xl font-bold text-white">+
                         {counterOn && (
                             <CountUp
                                 start={0}
-                                end={164}
+                                end={20}
                                 duration={2}
                                 delay={0}
-                                className="text-4xl font-bold text-white"
+                              
                             />
                         )}
+                        </span>
 
-                        <span>Trained Experts</span>
+                        <span>Trainee expert</span>
                     </p>
                     <p className="text-white flex flex-col">
-                        {counterOn && (
+                       <span className="text-4xl font-bold text-white">+
+                       {counterOn && (
                             <CountUp
                                 start={0}
-                                end={100}
+                                end={1000}
                                 duration={2}
                                 delay={0}
-                                className="text-4xl font-bold text-white"
+                          
                             />
                         )}
+                       </span>
 
-                        <span>Branches</span>
+                        <span>Clients satisfaits</span>
                     </p>
                     <p className="text-white flex flex-col">
-                        {counterOn && (
+                       <span  className="text-4xl font-bold text-white"> +
+                       {counterOn && (
                             <CountUp
+                            
                                 start={0}
-                                end={52}
+                                end={15}
                                 duration={2}
                                 delay={0}
-                                className="text-4xl font-bold text-white"
+                               
                             />
                         )}
+                       </span>
 
-                        <span>Satisfied Clients</span>
+                        <span>Année d expérience</span>
                     </p>
                 </div>
             </div>

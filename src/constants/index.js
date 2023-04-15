@@ -28,25 +28,25 @@ export const featuresItem = [
         icon: 'bar-chart-outline',
     },
     {
-        id: 'risk Management',
-        title: 'Risk Management',
+        id: 'data analysis and understanding ',
+        title: 'Data Analysis and understanding ',
         content:
             'Calculate every possible risk in your business, take control over them.',
-        icon: 'notifications-outline',
+        icon: 'podium-outline',
     },
     {
-        id: 'market Research',
-        title: 'Market Research',
+        id: 'it Support',
+        title: 'IT Support',
         content:
             'Know the market before taking any step, reduce risks before you go.',
-        icon: 'checkmark-done-outline',
+        icon: 'settings-outline',
     },
     {
-        id: 'quality Services',
-        title: 'Quality Services',
+        id: 'agile projectmanagement',
+        title: 'Agile Project Management',
         content:
             'Experience unparalleled service, from beginningto final construction.',
-        icon: 'bulb-outline',
+        icon: 'briefcase-outline',
     },
 ];
 

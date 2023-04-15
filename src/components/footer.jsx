@@ -98,7 +98,7 @@ function Footer() {
             </div>
 
             <div className=" mt-6 footer__secondpart text-white text-xs py-4 text-center font-light  bg-[#141b47]">
-                <p> Copyright &copy; 2023 Dagstra</p>
+                <p> Copyright &copy; 2023 DAGSTRA Cameroun SARL</p>
             </div>
         </footer>
     );
