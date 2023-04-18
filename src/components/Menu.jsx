@@ -5,7 +5,7 @@ import { useNavigate, NavLink } from 'react-router-dom';
 function Menu() {
     const [hidden, setHidden] = useState(false);
     const [toggle, setToggle] = useState(false);
-    const navigate = useNavigate();
+
     return (
         <>
             <div className="nav__first w-full bg-primarycolor relative ">
@@ -22,7 +22,7 @@ function Menu() {
                             name="call"
                             class="text-white text-base"
                         ></ion-icon>
-                        <a href="mailto:699999999">699 99 99 99</a>
+                        <a href="tel:699999999">699 99 99 99</a>
                     </p>
                     <p className="text-white font-semibold text-xs flex items-center gap-1">
                         <ion-icon
@@ -75,9 +75,10 @@ function Menu() {
                                 to="/"
                                 // className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
                                 className={({ isActive }) =>
-                                    isActive ? 'text-primarycolor font-medium inline-block text-lg' : 'hover:text-[#6a6796] font-medium inline-block text-lg'
+                                    isActive
+                                        ? 'text-primarycolor font-medium inline-block text-lg'
+                                        : 'hover:text-[#6a6796] font-medium inline-block text-lg'
                                 }
-                             
                             >
                                 Accueil
                             </NavLink>
@@ -85,8 +86,8 @@ function Menu() {
                         <li className="relative">
                             <a
                                 onClick={() => setHidden(!hidden)}
-                                href="#"
-                                className={` hover:text-[#6a6796]  font-medium nav__link text-lg flex items-center`}
+                               
+                                className={` hover:text-[#6a6796] cursor-pointer font-medium nav__link text-lg flex items-center`}
                             >
                                 <span>Services</span>
                                 <ion-icon
@@ -102,63 +103,94 @@ function Menu() {
                                 } submenu pb-0 pt-4 px-8 lg:absolute top-[114%] left-0 bg-white lg:p-8 lg:shadow-[0_0.5px_12px_-1px_rgba(0,0,0,0.3)] rounded-sm flex flex-col gap-4`}
                             >
                                 <li>
-                                    <a
-                                        href="#"
-                                        className="hover:text-[#6a6796]  font-normal nav__link text-md "
+                                    <NavLink
+                                        to="/Service/TransformationDigitale"
+                                        // className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
+                                        className={({ isActive }) =>
+                                            isActive
+                                                ? 'text-primarycolor font-medium  text-md'
+                                                : 'hover:text-[#6a6796] font-normal  text-md'
+                                        }
                                     >
-                                        Transformation Digital
-                                    </a>
+                                        Transformation Digitale
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
-                                        className="hover:text-[#6a6796]  font-normal nav__link text-md "
+                                    <NavLink
+                                        to="/Service/VideoSurveillance"
+                                        // className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
+                                        className={({ isActive }) =>
+                                            isActive
+                                                ? 'text-primarycolor font-medium  text-md'
+                                                : 'hover:text-[#6a6796] font-normal  text-md'
+                                        }
                                     >
                                         Video Surveillance
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
-                                        className="hover:text-[#6a6796]  font-normal nav__link text-md "
+                                    <NavLink
+                                        to="/Service/Reseau"
+                                        // className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
+                                        className={({ isActive }) =>
+                                            isActive
+                                                ? 'text-primarycolor font-medium  text-md'
+                                                : 'hover:text-[#6a6796] font-normal  text-md'
+                                        }
                                     >
                                         Reseau
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
-                                        className="hover:text-[#6a6796]  font-normal nav__link text-md "
+                                    <NavLink
+                                        to="/Service/DataManagement"
+                                        // className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
+                                        className={({ isActive }) =>
+                                            isActive
+                                                ? 'text-primarycolor font-medium  text-md'
+                                                : 'hover:text-[#6a6796] font-normal  text-md'
+                                        }
                                     >
                                         Data Management
-                                    </a>
+                                    </NavLink>
                                 </li>
                                 <li>
-                                    <a
-                                        href="#"
-                                        className="hover:text-[#6a6796]  font-normal nav__link text-lg "
+                                    <NavLink
+                                        to="/Service/Formation"
+                                        // className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
+                                        className={({ isActive }) =>
+                                            isActive
+                                                ? 'text-primarycolor font-medium  text-md'
+                                                : 'hover:text-[#6a6796] font-normal  text-md'
+                                        }
                                     >
                                         Formation
-                                    </a>
+                                    </NavLink>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a
-                                href="#"
-                                className={` hover:text-[#6a6796] font-medium nav__link text-lg inline-block`}
-                            >
-                                Réalisation
-                            </a>
-                        </li>
-                        <li>
-                        <NavLink
-                                to="/contact"
+                            <NavLink
+                                to="/Réalisations"
                                 // className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
                                 className={({ isActive }) =>
-                                    isActive ? 'text-primarycolor font-medium inline-block text-lg' : 'hover:text-[#6a6796] font-medium inline-block text-lg'
+                                    isActive
+                                    ? 'text-primarycolor font-medium inline-block text-lg'
+                                    : 'hover:text-[#6a6796] font-medium inline-block text-lg'
                                 }
-                             
+                            >
+                               Réalisations
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/Contact"
+                                // className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
+                                className={({ isActive }) =>
+                                    isActive
+                                        ? 'text-primarycolor font-medium inline-block text-lg'
+                                        : 'hover:text-[#6a6796] font-medium inline-block text-lg'
+                                }
                             >
                                 Contact
                             </NavLink>

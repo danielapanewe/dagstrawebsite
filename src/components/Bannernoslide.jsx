@@ -3,11 +3,14 @@ import React from 'react';
 function Bannernoslide({image, text, navigation}) {
     return (
         <section
-            className="banner py-28"
+            className="banner py-40"
             style={{
                 backgroundImage: `linear-gradient(#1c276565,#1c276565) ,url(${image})`,
                 backgroundPosition: 'center',
-                backgroundAttachment: 'fixed'
+                backgroundAttachment: 'fixed',
+                backgroundRepeat:'no-repeat',
+                backgroundSize:'cover'
+                
             }}
         >
             <div className="containeur">
