@@ -5,10 +5,11 @@ import About from '../About';
 import Ourservices from '../Ourservices';
 import Whychooseus from '../Whychooseus';
 import Calltoaction from '../Calltoaction';
-import Ourteam from '../Ourteam';
+import Cardwithtitle from '../Cardwithtitle';
 import Counter from '../Counter';
 import Footer from '../Footer';
 import Partners from '../Partners';
+import { employee } from '../../constants';
 
 function Home() {
     return (
@@ -18,8 +19,11 @@ function Home() {
             <About />
             <Ourservices />
             <Whychooseus />
-            <Calltoaction />
-            <Ourteam />
+            <Calltoaction
+                text={` If you have any query related invesment...we are available
+            24/7`}
+            />
+            <Cardwithtitle title={`NOTRE EQUIPE`} cardcontent={employee} />
             <Counter />
             <Partners />
             <Footer />

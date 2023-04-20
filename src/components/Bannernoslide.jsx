@@ -1,12 +1,11 @@
-import React from 'react';
 
-function Bannernoslide({image, text, navigation}) {
+
+function Bannernoslide({image, text, navigation,stylebackimg}) {
     return (
         <section
-            className="banner py-40"
+            className={`banner py-40 ${stylebackimg}`}
             style={{
                 backgroundImage: `linear-gradient(#1c276565,#1c276565) ,url(${image})`,
-                backgroundPosition: 'center',
                 backgroundAttachment: 'fixed',
                 backgroundRepeat:'no-repeat',
                 backgroundSize:'cover'

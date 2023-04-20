@@ -12,7 +12,7 @@ const Secondcard = ({ image, title, text, order }) => (
         <div className="p-4 sm:p-8 md:py-16 md:px-10 bg-white flex flex-col gap-4 order-1 ">
             <h2 className="text-xl text-primarycolor font-bold">{title}</h2>
             <p>{text}</p>
-            <a href="#" className="btn bg-primarycolor text-white self-start">
+            <a href="#" className={`btn bg-primarycolor text-white self-start `}>
                 Lire Plus
             </a>
         </div>

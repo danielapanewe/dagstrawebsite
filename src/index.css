@@ -77,9 +77,16 @@ nav {
     background: none;
     /* color: #1c276565; */
 }
+.owngrid{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+}
 @media (max-width: 976px) {
     .containeur {
         padding-inline: 50px;
+    }
+    .owngrid{
+        grid-template-columns: 1fr;
     }
 }
 

@@ -1,25 +1,18 @@
 import imageemployeeone from '../assets/portrait-3.jpg';
 import imageemployeetwo from '../assets/portrait-4.jpg';
 import imageemployeethree from '../assets/portrait-5.jpg';
-import imagetestimony from '../assets/testimonialimg.avif';
-export const navLinks = [
-    {
-        id: 'accueil',
-        title: 'Accueil',
-    },
-    {
-        id: 'service',
-        title: 'Service',
-    },
-    {
-        id: 'projets',
-        title: 'Projets',
-    },
-    {
-        id: 'contact',
-        title: 'Contact',
-    },
-];
+import imagecamera2 from '../assets/cameraimg2.png';
+import learningcourseimg from '../assets/learningcourse.jpg';
+import projectimg1 from '../assets/Rea/project1.jpg';
+import projectimg2 from '../assets/Rea/project2.jpg';
+import projectimg3 from '../assets/Rea/project3.jpg';
+import projectimg4 from '../assets/Rea/project4.jpg';
+import projectimg5 from '../assets/Rea/project5.jpg';
+import projectimg6 from '../assets/Rea/project6.jpg';
+import projectimg7 from '../assets/Rea/project7.png';
+import projectimg8 from '../assets/Rea/project8.jpg';
+import projectimg9 from '../assets/Rea/project9.jpg';
+
 export const featuresItem = [
     {
         id: 'business consulting',
@@ -56,7 +49,7 @@ export const employee = [
         id: 'employee1',
         image: `${imageemployeeone}`,
         alt: 'employé 1',
-        name: 'Legartha Mantana',
+        nom: 'Legartha Mantana',
         position: 'Brand Management Consultant',
         description:
             'As General Counsel of Elixir, Tony oversees global legal activities and policies across all aspects.',
@@ -65,7 +58,7 @@ export const employee = [
         id: 'employee2',
         image: `${imageemployeetwo}`,
         alt: 'employé 1',
-        name: 'John Snow',
+        nom: 'John Snow',
         position: 'Business Analyst',
         description:
             'John has overseen the meteoric growth while protecting scaling its uniquely creative and culture.',
@@ -74,10 +67,37 @@ export const employee = [
         id: 'employee3',
         image: `${imageemployeethree}`,
         alt: 'employé 1',
-        name: 'Ragner Lothbrok',
+        nom: 'Ragner Lothbrok',
         position: 'Business Consultant',
         description:
             'Ragner, SVP of Engineering, oversees Elixir’s vast engineering organization which drives the core programming.',
+    },
+];
+
+export const formations = [
+    {
+        id: 'course1',
+        image: `${learningcourseimg}`,
+        alt: 'formation 1',
+        nom: '$149.00',
+        position: 'Brand Management Consultant',
+        description: 'Web Design & Development Course for Beginners',
+    },
+    {
+        id: 'course2',
+        image: `${learningcourseimg}`,
+        alt: 'formation 2',
+        nom: '$149.00',
+        position: 'Business Analyst',
+        description: 'Web Design & Development Course for Beginners',
+    },
+    {
+        id: 'course3',
+        image: `${learningcourseimg}`,
+        alt: 'formation 3',
+        nom: '$149.00',
+        position: 'Business Consultant',
+        description: 'Web Design & Development Course for Beginners',
     },
 ];
 
@@ -112,20 +132,124 @@ export const featuresCamera = [
 export const testimonyslider = [
     {
         id: 'kamgabertin',
-        image: `${imagetestimony}`,
+        image: `${imageemployeethree}`,
         nameperson: 'Kamga Bertin',
         avis: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem alias ut provident sapiente repellendus.',
     },
     {
         id: 'jeanettedejean',
-        image: `${imagetestimony}`,
+        image: `${imageemployeethree}`,
         nameperson: 'Jeanette de Jean',
         avis: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem alias ut provident sapiente repellendus.',
     },
     {
         id: 'magnetagne',
-        image: `${imagetestimony}`,
+        image: `${imageemployeethree}`,
         nameperson: 'Magne Tagne',
         avis: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem alias ut provident sapiente repellendus.',
     },
+];
+
+export const descriptionitems = [
+    {
+        id: 'descriptionone',
+        content: 'Dissuasion des actes de malveillance',
+    },
+    {
+        id: 'descriptiontwo',
+        content:
+            '  Protection de vos collaborateurs, de vos clients et de vos visiteurs',
+    },
+    {
+        id: 'descriptionthree',
+        content:
+            ' Surveillance de votre site et de ses zones sensibles ou à risques',
+    },
+    {
+        id: 'descriptionfour',
+        content:
+            'Surveillance de vos biens, marchandises ou données à forte valeur',
+    },
+    {
+        id: 'descriptionfive',
+        content: ' Lutte contre le vol et la démarque (inconnue ouinterne)',
+    },
+    {
+        id: 'descriptionsix',
+        content:
+            ' Outil de preuve en cas d’intrusion, de vol, d’agression ou de litige',
+    },
+    {
+        id: 'descriptionseven',
+        content:
+            'Outil de gestion et de pilotage (comptage de personnes, traçabilité de colis,…)',
+    },
+];
+
+export const featurewebdevelopment = [
+    {
+        id: 'feature1',
+        content:
+            'Applications HTML5 / JavaScript fonctionnelles, pratiques et visuellement attrayantes qui fonctionnent parfaitement sur les appareils mobiles et les tablettes.',
+    },
+    { id: 'feature2', content: 'Application de vente en ligne (e-commerce)' },
+    {
+        id: 'feature3',
+        content: 'Plateforme de formation en ligne (e-learning)',
+    },
+    { id: 'feature4', content: 'Site web de présentation' },
+];
+
+export const projectitem = [
+    {
+        id: 'projectitem1',
+        image: `${projectimg1}`,
+        categorie: 'applicationweb',
+    },
+    {
+        id: 'projectitem2',
+        image: `${projectimg2}`,
+        categorie: 'applicationweb',
+    },
+    {
+        id: 'projectitem3',
+        image: `${projectimg3}`,
+        categorie: 'applicationweb',
+    },
+    {
+        id: 'projectitem4',
+        image: `${projectimg4}`,
+        categorie: 'applicationmobile',
+    },
+    {
+        id: 'projectitem5',
+        image: `${projectimg5}`,
+        categorie: 'applicationmobile',
+    },
+    {
+        id: 'projectitem6',
+        image: `${projectimg6}`,
+        categorie: 'siteweb',
+    },
+    {
+        id: 'projectitem7',
+        image: `${projectimg7}`,
+        categorie: 'siteweb',
+    },
+    {
+        id: 'projectitem8',
+        image: `${projectimg8}`,
+        categorie: 'siteweb',
+    },
+    {
+        id: 'projectitem9',
+        image: `${projectimg9}`,
+        categorie: 'siteweb',
+    },
+];
+
+export const test = [
+    { id: 'applicationweb', content: 'Application Web' },
+    { id: 'applicationmobile', content: 'Application Mobile' },
+    { id: 'siteweb', content: 'Sites Web' },
 ];
