@@ -83,6 +83,21 @@ function Menu() {
                                 Accueil
                             </NavLink>
                         </li>
+
+                        <li>
+                            <NavLink
+                                to="/Apropos"
+                                // className={` hover:text-[#6a6796]  font-medium nav__link text-lg inline-block`}
+                                className={({ isActive }) =>
+                                    isActive
+                                    ? 'text-primarycolor font-medium inline-block text-lg'
+                                    : 'hover:text-[#6a6796] font-medium inline-block text-lg'
+                                }
+                            >
+                              A propos
+                            </NavLink>
+                        </li>
+
                         <li className="relative">
                             <a
                                 onClick={() => setHidden(!hidden)}

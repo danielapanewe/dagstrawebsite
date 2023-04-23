@@ -1,4 +1,5 @@
 import logoblanc from '../assets/logoblanc.png';
+import {  NavLink } from 'react-router-dom';
 
 function Footer() {
     return (
@@ -16,6 +17,7 @@ function Footer() {
                             <a href="#">
                                 <ion-icon name="logo-linkedin"></ion-icon>
                             </a>
+                   
                             <a href="#">
                                 <ion-icon name="logo-youtube"></ion-icon>
                             </a>
@@ -54,44 +56,54 @@ function Footer() {
                     <div className="flex flex-col  text-white">
                         <h3 className="font-bold mb-4 text-lg">Liens Rapide</h3>
                         <div className="pl-3 flex flex-col gap-2 text-sm">
-                            <a href="#">
+                            <NavLink to="/" className={'flex items-center'}>
                                 <ion-icon name="chevron-forward"></ion-icon>
                                 <span>Accueil </span>
-                            </a>
-                            <a href="#">
+                            </NavLink>
+                           
+                            <NavLink to="/Apropos" className={'flex items-center'}>
                                 <ion-icon name="chevron-forward"></ion-icon>
-                                <span>Services</span>
-                            </a>
-                            <a href="#">
+                                <span>A propos</span>
+                            </NavLink>
+                            <NavLink to="/Réalisations" className={'flex items-center'}>
+                                <ion-icon name="chevron-forward"></ion-icon>
+                                <span>Réalisations </span>
+                            </NavLink>
+                            <NavLink to="/Contact" className={'flex items-center'}>
                                 <ion-icon name="chevron-forward"></ion-icon>
                                 <span>Contact</span>
-                            </a>
-                            <a href="#">
+                            </NavLink>
+                            <NavLink to="/Politiquedeconfidentialité" className={'flex items-center'}>
                                 <ion-icon name="chevron-forward"></ion-icon>
-                                <span>Formation</span>
-                            </a>
+                                <span>Politique de Confidentialité</span>
+                            </NavLink>
+                           
                         </div>
                     </div>
 
                     <div className="flex flex-col text-white">
                         <h3 className="font-bold mb-4 text-lg">Nos Services</h3>
                         <div className="pl-3 flex flex-col gap-2 text-sm">
-                            <a href="#">
+                            <NavLink to="/Service/TransformationDigitale" className={'flex items-center'} >
                                 <ion-icon name="chevron-forward"></ion-icon>
-                                <span>Développement </span>
-                            </a>
-                            <a href="#">
+                                <span>Transformation Digitale </span>
+                            </NavLink>
+                            <NavLink to="/Service/VideoSurveillance" className={'flex items-center'}>
                                 <ion-icon name="chevron-forward"></ion-icon>
-                                <span>Réseau</span>
-                            </a>
-                            <a href="#">
+                                <span>Video Surveillance</span>
+                            </NavLink>
+                            <NavLink to="/Service/Reseau" className={'flex items-center'}>
                                 <ion-icon name="chevron-forward"></ion-icon>
-                                <span>Vidéo Sécurité</span>
-                            </a>
-                            <a href="#">
+                                <span>Reseau</span>
+                            </NavLink>
+                            <NavLink to="/Service/DataManagement" className={'flex items-center'}>
+                                <ion-icon name="chevron-forward"></ion-icon>
+                                <span>Data Management</span>
+                            </NavLink>
+                            <NavLink to="/Service/Formation" className={'flex items-center'}>
                                 <ion-icon name="chevron-forward"></ion-icon>
                                 <span>Formation</span>
-                            </a>
+                            </NavLink>
                         </div>
                     </div>
                 </div>

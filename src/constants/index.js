@@ -248,8 +248,9 @@ export const projectitem = [
     },
 ];
 
-export const test = [
-    { id: 'applicationweb', content: 'Application Web' },
-    { id: 'applicationmobile', content: 'Application Mobile' },
-    { id: 'siteweb', content: 'Sites Web' },
+export const projectbtnnav = [
+    { id: 'btn1', name: 'Tout', value: 'tout' },
+    { id: 'btn2', name: 'Applications Web', value: 'applicationweb' },
+    { id: 'btn3', name: 'Applications Mobile', value: 'applicationmobile' },
+    { id: 'btn4', name: 'Sites Web', value: 'siteweb' },
 ];

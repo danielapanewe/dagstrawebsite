@@ -1,82 +1,63 @@
-import { projectitem } from '../constants';
-import { useState } from 'react';
+import { projectitem, projectbtnnav } from '../constants';
+import { useState, useEffect } from 'react';
 
 const Filtergallery = () => {
-    const [items, setItems] = useState(projectitem);
-    const [active, setActive] = useState(false);
-    const [active1, setActive1] = useState(false);
-    const [active2, setActive2] = useState(false);
-    const [active3, setActive3] = useState(false);
+    const [filterGal, setFilterGal] = useState(null);
+    const [active, setActive] = useState('tout');
 
-    const filterItem = (catItem) => {
-        const updateItem = projectitem.filter((currentItem) => {
-            return currentItem.categorie === catItem;
-        });
+    useEffect(() => {
+        setFilterGal(projectitem);
+    }, []);
 
-        setItems(updateItem);
-        setActive(true);
+    const handleClick = (e) => {
+        const btnValue = e.target.value;
+        setActive(btnValue);
+        const newFilterGal = projectitem.filter(
+            (item) => item.categorie === btnValue
+        );
+        if (btnValue === 'tout') {
+            setFilterGal(projectitem);
+        } else {
+            setFilterGal(newFilterGal);
+        }
     };
 
     return (
         <>
             <div className="nav__project my-8">
                 <ul className="containeur flex gap-8 flex-wrap items-start  gap-y-4">
-                    <li className="nav-item">
-                        <a
-                            className={`${
-                                !active
-                                    ? ' text-primarycolor underline  '
-                                    : 'text-textcolor'
-                            }`}
-                            onClick={() => {
-                                setItems(projectitem);
-                            }}
-                        >
-                            Tout
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a
-                            className="cursor-pointer"
-                            onClick={() => {
-                                filterItem('applicationweb');
-                            }}
-                        >
-                            Applications Web
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a
-                            className="cursor-pointer"
-                            onClick={() => {
-                                filterItem('applicationmobile');
-                            }}
-                        >
-                            Application mobile
-                        </a>
-                    </li>
-                    <li className="nav-item">
-                        <a
-                             className="cursor-pointer"
-                            onClick={() => {
-                                filterItem('siteweb');
-                            }}
-                        >
-                            Sites Web
-                        </a>
-                    </li>
+                    {projectbtnnav.map((item, id) => {
+                        const { name, value } = item;
+                        return (
+                            <li className="nav-item">
+                                <button
+                                    className={`${
+                                        active === value
+                                            ? 'text-primarycolor underline pb-4'
+                                            : 'text-textcolor'
+                                    }`}
+                                    key={id}
+                                    value={value}
+                                    onClick={handleClick}
+                                >
+                                    {name}
+                                </button>
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
 
             <div className="project__containeur containeur grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
-                {items.map((element) => {
-                    const { id, image } = element;
-                    return (
-                        <div key={id}>
-                            <img src={image} alt="" className="w-full" />
-                        </div>
-                    );
-                })}
+                {filterGal &&
+                    filterGal.map((element, id) => {
+                        const { image } = element;
+                        return (
+                            <div key={id}>
+                                <img src={image} alt="" className="w-full" />
+                            </div>
+                        );
+                    })}
             </div>
         </>
     );

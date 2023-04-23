@@ -1,3 +1,4 @@
+import {  NavLink } from 'react-router-dom';
 function Calltoaction({text}) {
     return (
         <section className="calltoaction bg-primarycolor mt-14">
@@ -6,9 +7,9 @@ function Calltoaction({text}) {
                    
                     {text}
                 </p>
-                <a href="#" className="btn bg-white text-primarycolor">
+                <NavLink to="/Contact" className="btn bg-white text-primarycolor">
                     Contact Us
-                </a>
+                </NavLink>
             </div>
         </section>
     );
