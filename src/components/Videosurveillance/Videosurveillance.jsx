@@ -35,14 +35,14 @@ function Videosurveillance() {
             Détection d'Intrusion, Contrôle d'Accès, etc. La solution de
             vidéosurveillance DAGSTRA optimise le contrôle des
             biens et des personnes et s’adaptent aux besoins de toute
-            Entreprise et à tout type d’installation.`}
+            entreprise et à tout type d’installation.`}
             />
             <Camerafeature />
             <Whycamera
                 title={`POURQUOI CHOISIR NOS VIDEO SURVEILLANCE`}
                 image={cameraimgtwo}
-                boldtextone={`Dissuader, surveiller et agir sont les 3 principaux objectifs de tout système de vidéosurveillance`}
-                thintextone={`Nos solutions sont donc conçues afin d’apporter une réponse simple et sécuritaire à toutes les problématiques que vous rencontrez quel que soit votre secteur`}
+                boldtextone={`Dissuader, surveiller et agir sont les 3 principaux objectifs de tout système de vidéosurveillance.`}
+                thintextone={` Nos solutions sont donc conçues afin d’apporter une réponse simple et sécuritaire à toutes les problématiques que vous rencontrez quel que soit votre secteur`}
                 descriptionfeature={descriptionitems}
                 thintextwo={`La surveillance vidéo est un atout essentiel
                 de votre système de sécurité qui gagne en

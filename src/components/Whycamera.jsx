@@ -1,4 +1,5 @@
 import Title from './Title';
+import { Fade } from 'react-awesome-reveal';
 
 function Whycamera({
     title,
@@ -20,6 +21,7 @@ function Whycamera({
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-6">
                     <img src={image} alt="image de camera" className="w-full" />
                     <div className="content flex flex-col gap-4  pb-8 pt-4">
+                    <Fade cascade damping={0.1} direction={'up'} triggerOnce>
                         <p>
                             <b>{boldtextone}</b>
 
@@ -35,6 +37,7 @@ function Whycamera({
                             )}
                         </ul>
                         <p>{thintextwo}</p>
+                        </Fade>
                     </div>
                 </div>
             </div>

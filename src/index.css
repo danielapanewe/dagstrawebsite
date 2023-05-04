@@ -56,10 +56,11 @@ p,
     font-size: 0.9rem;
     border-radius: 0.3rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
-        border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
+        -webkit-box-shadow 0.15s ease-in-out;
 }
 .btn:hover {
-    border-color: #646cff;
+    background-color: #161f51;
+    color: white;
 }
 .btn:focus,
 .btn:focus-visible {
@@ -73,19 +74,25 @@ p,
 nav {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
-.react-slideshow-container .default-nav{
+.react-slideshow-container .default-nav {
     background: none;
     /* color: #1c276565; */
 }
-.owngrid{
+.owngrid {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
+}
+.customgrid{
+    grid-template-columns: 1fr 0.2fr;
+}
+.smoothanimation {
+    transition: all 0.5s ease 0s;
 }
 @media (max-width: 976px) {
     .containeur {
         padding-inline: 50px;
     }
-    .owngrid{
+    .owngrid , .customgrid{
         grid-template-columns: 1fr;
     }
 }

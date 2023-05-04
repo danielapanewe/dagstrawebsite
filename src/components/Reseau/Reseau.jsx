@@ -2,12 +2,10 @@ import Menu from '../Menu';
 import Footer from '../Footer';
 import Bannernoslide from '../Bannernoslide';
 import Description from '../Description';
-import Title from '../Title';
-import Firstcard from '../Firstcard';
-import Servicestransformationdigital from '../Servicestransformationdigital';
 import backgroundimg from '../../assets/networkback.jpeg';
-import { featuresCamera } from '../../constants';
-
+import Whycamera from '../Whycamera';
+import { descriptionnetwork } from '../../constants';
+import Calltoaction from '../Calltoaction';
 function Reseau() {
     return (
         <>
@@ -19,27 +17,24 @@ function Reseau() {
                 stylebackimg={`bg-center`}
             />
             <Description
-                name={`DAGSTRA `}
-                paragraph1={`exploite un réseau MPLS couvrant 140 pays et est présent dans plus de        3000 villes avec une implantation forte sur les marchés en expansion en Afrique, en Asie, au Moyen-Orient, en Europe Centrale et Orientale. Notre réseau est prêt à se développer avec votre entreprise tout comme votre besoin en bande passante et en applications.`}
-                paragraph2={`Avec un accès facile vers 3000 destinations dans le monde, MATRIX TELECOMS simplifie l’accès des Entreprises à leur réseau via une connexion MPLS unique. Un réseau global qui couvre cinq continents avec une forte pénétration des marchés émergents et qui offre une méthode rapide et efficace pour gérer tout type de trafic, tout en optimisant la diffusion de vos flux vidéo et applications informatiques.`}
+                paragraph1={`Un réseau informatique est un ensemble de dispositifs électroniques tels que des ordinateurs, des serveurs, des routeurs, des commutateurs, des imprimantes, etc., interconnectés pour partager des ressources, des données et des applications. Les réseaux informatiques permettent aux utilisateurs de communiquer et de partager des données plus rapidement et plus efficacement.
+                Il existe différents types de réseaux informatiques, notamment les réseaux locaux (LAN) qui couvrent une zone géographique limitée telle qu'un bureau ou un bâtiment, les réseaux étendus (WAN) qui couvrent une zone géographique plus étendue telle qu'une ville ou un pays, et les réseaux métropolitains (MAN) qui couvrent une zone géographique plus grande que LAN mais plus petite que WAN.
+                .`}
+                paragraph2={`Les réseaux informatiques sont conçus pour être évolutifs et flexibles, avec des architectures et des topologies différentes pour répondre aux besoins des utilisateurs. Les réseaux peuvent être configurés en utilisant différentes technologies de câblage telles que le câblage cuivre, la fibre optique et le sans fil (Wi-Fi).`}
             />
 
-            <Title
-                nametitle={`NOS AVANTAGES`}
-                className={`text-primarycolor text-center mb-8 mt-14`}
+            <Whycamera
+                title={`AVANTAGES DE NOTRE SERVICE RESEAU`}
+                image={backgroundimg}
+               
+                thintextone={` La mise en réseau avec DAGSTRA offre plusieurs avantages notammant:`}
+                descriptionfeature={descriptionnetwork}
+                thintextwo={`Cependant, les réseaux informatiques peuvent également présenter des risques pour la sécurité des données mais ne vous inquitez pas, nos professionnels prennent des mesures pour protéger le réseau et vos données. `}
+                stylescontainer={`bg-[#e8e9f0] py-12 mt-12`}
             />
-
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center !mt-12 containeur">
-                {featuresCamera.map((carditem) => (
-                    <Firstcard key={carditem.id} {...carditem} />
-                ))}
-            </div>
-
-            <Title
-            nametitle={`NOS SERVICES`}
-            className={`text-primarycolor text-center mb-8 mt-14`}
-            />
-            <Servicestransformationdigital />
+            
+            <Calltoaction 
+            text={`Besoin qu'on mette en place le réseau de votre système ? `}/>
             <Footer />
         </>
     );

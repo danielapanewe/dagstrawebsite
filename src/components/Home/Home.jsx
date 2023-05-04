@@ -1,6 +1,6 @@
 import React from 'react';
 import Menu from '../Menu';
-import Banner from '../banner';
+import Banner from '../Banner';
 import About from '../About';
 import Ourservices from '../Ourservices';
 import Whychooseus from '../Whychooseus';
@@ -20,8 +20,7 @@ function Home() {
             <Ourservices />
             <Whychooseus />
             <Calltoaction
-                text={` If you have any query related invesment...we are available
-            24/7`}
+                text={` Si vous avez besoin de nos services... nous sommes disponibles`}
             />
             <Cardwithtitle title={`NOTRE EQUIPE`} cardcontent={employee} />
             <Counter />

@@ -21,8 +21,8 @@ function Counter() {
                     backgroundSize: 'cover',
                 }}
             >
-                <h2 className="text-3xl lg:text-5xl font-bold text-white">
-                    Take the right step, do the big things.
+                <h2 className="text-3xl lg:text-5xl font-bold text-white uppercase">
+                    Nos chiffres-clé
                 </h2>
                 <div className="grid grid-cols-2  lg:grid-cols-4">
                     <p className="text-white flex flex-col ">

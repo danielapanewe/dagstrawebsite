@@ -1,9 +1,11 @@
 import { projectitem, projectbtnnav } from '../constants';
 import { useState, useEffect } from 'react';
+import Modal from './Modal';
 
 const Filtergallery = () => {
     const [filterGal, setFilterGal] = useState(null);
     const [active, setActive] = useState('tout');
+    const [showModals, setShowModals] = useState(false);
 
     useEffect(() => {
         setFilterGal(projectitem);
@@ -29,14 +31,13 @@ const Filtergallery = () => {
                     {projectbtnnav.map((item, id) => {
                         const { name, value } = item;
                         return (
-                            <li className="nav-item">
+                            <li className="nav-item " key={id}>
                                 <button
                                     className={`${
                                         active === value
                                             ? 'text-primarycolor underline pb-4'
                                             : 'text-textcolor'
                                     }`}
-                                    key={id}
                                     value={value}
                                     onClick={handleClick}
                                 >
@@ -51,10 +52,23 @@ const Filtergallery = () => {
             <div className="project__containeur containeur grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
                 {filterGal &&
                     filterGal.map((element, id) => {
-                        const { image } = element;
+                        const { image, name } = element;
                         return (
-                            <div key={id}>
+                            <div key={id} className="relative">
                                 <img src={image} alt="" className="w-full" />
+                                <i
+                                    className="uil uil-info-circle absolute bottom-0 right-0 p-1 text-3xl text-primarycolor bg-white cursor-pointer hover:text-textcolor"
+                                    onClick={() => {
+                                        setShowModals(true);
+                                    }}
+                                ></i>
+
+                                {showModals && (
+                                    <Modal
+                                        setShowModal={setShowModals}
+                                        nomprojet={name}
+                                    />
+                                )}
                             </div>
                         );
                     })}

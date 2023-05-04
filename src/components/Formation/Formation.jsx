@@ -21,22 +21,15 @@ function Formation() {
             <Whycamera
                 title={`LES FORMATIONS CHEZ DAGSTRA`}
                 image={aboutlearningimg}
-                boldtextone={`Dissuader, surveiller et agir sont les 3 principaux objectifs de tout système de vidéosurveillance`}
-                thintextone={`Nos solutions sont donc conçues afin d’apporter une réponse simple et sécuritaire à toutes les problématiques que vous rencontrez quel que soit votre secteur`}
+                thintextone={`Les objectifs de la formation en service informatique sont de fournir aux individus les compétences et les connaissances nécessaires pour être capables de :`}
                 descriptionfeature={descriptionitems}
-                thintextwo={`La surveillance vidéo est un atout essentiel
-                de votre système de sécurité qui gagne en
-                performance lorsqu’il est couplé à votre contrôle
-                d’accès ou votre système d’alarme. C’est pour cela
-                que tous nos dispositifs sont interopérables et
-                compatibles entre eux ! `}
+                thintextwo={` La formation en service informatique est un élément important pour les individus qui cherchent à travailler dans le domaine de l'informatique, en particulier dans le domaine du service informatique. Elle fournit aux apprenants les compétences et les connaissances nécessaires pour gérer et maintenir les systèmes informatiques et les réseaux, ainsi que pour résoudre les problèmes techniques.`}
                 stylescontainer={`mt-12`}
                 stylestitle={`text-primarycolor after:bg-primarycolor`}
             />
 
             <Cardwithtitle title={`NOS FORMATIONS`} cardcontent={formations} />
-            <Calltoaction 
-            text={`Vous souhaitez accéder à nos formations? `}/>
+            <Calltoaction text={`Vous souhaitez accéder à nos formations? `} />
             <Testimonial slides={testimonyslider} />
 
             <Footer />

@@ -1,3 +1,4 @@
+import { Fade } from 'react-awesome-reveal';
 function Bannernoslide({ image, text, navigation, stylebackimg }) {
     return (
         <section
@@ -10,6 +11,7 @@ function Bannernoslide({ image, text, navigation, stylebackimg }) {
             }}
         >
             <div className="containeur">
+                <Fade direction={'left'} triggerOnce>
                 <h2
                     className="text-3xl lg:text-6xl text-white font-bold pb-3 
                 "
@@ -17,6 +19,7 @@ function Bannernoslide({ image, text, navigation, stylebackimg }) {
                     {text}
                 </h2>
                 <span className=" text-white ">{navigation}</span>
+                </Fade>
             </div>
         </section>
     );

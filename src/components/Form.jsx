@@ -1,23 +1,51 @@
-import React from 'react';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 function Form() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                'service_vierpfk',
+                'template_5a0uxdc',
+                form.current,
+                'gRlUMV_XGWE_TWeV1'
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                },
+                (error) => {
+                    console.log(error.text);
+                }
+            );
+
+        e.target.reset();
+
+        alert('Vos informations ont bien été envoyées');
+    };
     return (
         <div className="containeur pt-16">
             <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div className=" bg-primarycolor py-16 xl:rounded-bl rounded-tl rounded-tr xl:rounded-tr-none">
                     <div className=" px-8 ">
                         <h1 className="xl:text-4xl text-3xl pb-4 text-white font-bold">
-                            Get in touch
+                            Nous contacter
                         </h1>
                         <p className=" text-white pb-8 lg:pr-4">
-                            Got a question about us? Are you interested in
-                            partnering with us? Have some suggestions or just
-                            want to say Hi? Just contact us. We are here to
-                            asset you.
+                            Vous avez une question ? Êtes-vous intéressé par un
+                            partenariat avec nous? Vous avez des suggestions ou
+                            vous voulez simplement dire bonjour ?
+                            Contactez-nous. Nous sommes là pour vous.
                         </p>
                         <div className="flex pb-4 items-center">
-                          
-                            <a href="tel:+699 999 999" className="flex items-center">
+                            <a
+                                href="tel:+699 999 999"
+                                className="flex items-center"
+                            >
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
                                     className="icon icon-tabler icon-tabler-phone-call"
@@ -35,12 +63,18 @@ function Form() {
                                     <path d="M15 7a2 2 0 0 1 2 2" />
                                     <path d="M15 3a6 6 0 0 1 6 6" />
                                 </svg>
-                                <span className="pl-4 text-white text-base">
-                                    +1 (308) 321 321
-                                </span>
+                                <a
+                                    href="tel:+4915231918349"
+                                    className="pl-4 text-white text-base"
+                                >
+                                    +49 152 3191 8349
+                                </a>
                             </a>
                         </div>
-                        <a href='mailto:dagstra@gmail.com' className="flex items-center">
+                        <a
+                            href="mailto:info@cm.dagstra.com"
+                            className="flex items-center"
+                        >
                             <div>
                                 <svg
                                     xmlns="http://www.w3.org/2000/svg"
@@ -66,23 +100,23 @@ function Form() {
                                 </svg>
                             </div>
                             <p className="pl-4 text-white text-base">
-                            dagstra@gmail.com
+                                info@cm.dagstra.com
                             </p>
                         </a>
                         <p className="text-lg text-white pt-10 tracking-wide">
-                            545, Street 11, Block F <br />
-                            Dean Boulevard, Ohio
+                            Moosweg 3, 51377 <br /> Leverkusen, Allemagne
                         </p>
-                       
                     </div>
                 </div>
                 <div className=" bg-gray-200 h-full pt-5 pb-5 xl:pr-5 xl:pl-0 rounded-tr rounded-br">
                     <form
+                        ref={form}
+                        onSubmit={sendEmail}
                         id="contact"
                         className="bg-white py-4 px-8 rounded-tr rounded-br"
                     >
                         <h1 className="xl:text-4xl text-3xl font-bold mb-6">
-                            Enter Details
+                            Entrez vos informations
                         </h1>
                         <div className="block xl:flex w-full flex-wrap justify-between mb-6">
                             <div className="mb-6 xl:mb-0">
@@ -91,15 +125,14 @@ function Form() {
                                         htmlFor="full_name"
                                         className=" text-sm font-semibold leading-tight tracking-normal mb-2"
                                     >
-                                        Full Name
+                                        Nom Complet
                                     </label>
                                     <input
                                         required
                                         id="full_name"
                                         name="full_name"
                                         type="text"
-                                        className="focus:outline-none focus:border focus:border-primarycolor font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
-                                         
+                                        className="focus:outline-none focus:border focus:border-primarycolor font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                                     />
                                 </div>
                             </div>
@@ -116,28 +149,26 @@ function Form() {
                                         id="email"
                                         name="email"
                                         type="email"
-                                        className="focus:outline-none focus:border focus:border-primarycolor font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
-                                         
+                                        className="focus:outline-none focus:border focus:border-primarycolor font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                                     />
                                 </div>
                             </div>
                         </div>
                         <div className="flex w-full flex-wrap">
-                            <div >
+                            <div>
                                 <div className="flex flex-col">
                                     <label
                                         htmlFor="phone"
                                         className=" text-sm font-semibold leading-tight tracking-normal mb-2"
                                     >
-                                        Phone
+                                        Numéro
                                     </label>
                                     <input
                                         required
                                         id="phone"
                                         name="phone"
                                         type="tel"
-                                        className="focus:outline-none focus:border focus:border-primarycolor font-normal w-64 h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
-                                         
+                                        className="focus:outline-none focus:border focus:border-primarycolor font-normal w-full h-10 flex items-center pl-3 text-sm border-gray-300 rounded border"
                                     />
                                 </div>
                             </div>
@@ -151,19 +182,18 @@ function Form() {
                                     Message
                                 </label>
                                 <textarea
-                                     
                                     name="message"
                                     className="border-gray-300 border mb-4 rounded py-2 text-sm outline-none resize-none px-3 focus:border focus:border-primarycolor"
                                     rows={8}
                                     id="message"
-                                    defaultValue={''}
+                                    required
                                 />
                             </div>
                             <button
                                 type="submit"
                                 className="focus:outline-none transition duration-150 ease-in-out  rounded text-white btn bg-primarycolor"
                             >
-                                Submit
+                                Envoyer
                             </button>
                         </div>
                     </form>

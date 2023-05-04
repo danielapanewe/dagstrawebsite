@@ -9,7 +9,7 @@ function Confidentialite() {
 
             <Title
                 nametitle={'POLITIQUE DE CONFIDENTIALITE'}
-                className={'text-primarycolor text-center mt-12 containeur'}
+                className={'text-primarycolor text-center !mt-12 containeur'}
             />
             <section className="content containeur">
                 <h3 className="text-primarycolor my-8 text-xl font-semibold">

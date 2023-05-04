@@ -13,6 +13,7 @@ function Contact() {
                 image={contactimg}
                 text={`Nous Contacter`}
                 navigation={`Accueil >> Contact`}
+                stylebackimg={'bg-center'}
             />
             <Form/>
             <Footer />
