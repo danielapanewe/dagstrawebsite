@@ -9,6 +9,7 @@ import Cardwithtitle from '../Cardwithtitle';
 import Counter from '../Counter';
 import Footer from '../Footer';
 import Partners from '../Partners';
+import ButtonScrollToTop from '../ButtonScrollToTop';
 import { employee } from '../../constants';
 
 function Home() {
@@ -26,6 +27,7 @@ function Home() {
             <Counter />
             <Partners />
             <Footer />
+            <ButtonScrollToTop></ButtonScrollToTop>
         </>
     );
 }

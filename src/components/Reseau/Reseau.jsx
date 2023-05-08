@@ -6,6 +6,7 @@ import backgroundimg from '../../assets/networkback.jpeg';
 import Whycamera from '../Whycamera';
 import { descriptionnetwork } from '../../constants';
 import Calltoaction from '../Calltoaction';
+import ButtonScrollToTop from '../ButtonScrollToTop';
 function Reseau() {
     return (
         <>
@@ -36,6 +37,7 @@ function Reseau() {
             <Calltoaction 
             text={`Besoin qu'on mette en place le réseau de votre système ? `}/>
             <Footer />
+            <ButtonScrollToTop></ButtonScrollToTop>
         </>
     );
 }

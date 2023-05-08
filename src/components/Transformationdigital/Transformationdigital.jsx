@@ -5,6 +5,7 @@ import Bannernoslide from '../Bannernoslide';
 import Servicestransformationdigital from '../Servicestransformationdigital';
 import bachgroundimg from '../../assets/backgroundtransformationdigitale.jpg';
 import Calltoaction from '../Calltoaction';
+import ButtonScrollToTop from '../ButtonScrollToTop';
 
 function Transformationdigital() {
     return (
@@ -20,6 +21,7 @@ function Transformationdigital() {
             <Calltoaction 
             text={`Besoin d'un application ou site sur mesure? `}/>
             <Footer />
+            <ButtonScrollToTop></ButtonScrollToTop>
         </>
     );
 }

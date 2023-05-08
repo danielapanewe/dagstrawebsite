@@ -1,5 +1,5 @@
 import React from 'react';
-import whychooseusimg from '../assets/why-choose-us.jpg';
+import whychooseusimg from '../assets/pourquoinouschoisir.png';
 import { Fade, Zoom } from 'react-awesome-reveal';
 
 function Whychooseus() {
@@ -13,7 +13,7 @@ function Whychooseus() {
                 </Zoom>
                 <div className="whychooseus__content grid grid-cols-1 lg:grid-cols-2 mt-12 gap-10 items-center">
                     <img src={whychooseusimg} alt="image alt" />
-                    <div className="whychooseus__text flex flex-col gap-6">
+                    <div className="whychooseus__text flex flex-col gap-4">
                         <Fade cascade damping={0.2} triggerOnce>
                             <div className="flex flex-col gap-2">
                                 <h3 className="text-primarycolor font-bold text-xl">

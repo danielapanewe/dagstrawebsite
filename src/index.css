@@ -19,6 +19,8 @@ a {
 
 body {
     color: #6a6a6a;
+    position: relative;
+    scroll-behavior: smooth;
 }
 
 .title {
@@ -66,6 +68,19 @@ p,
 .btn:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
 }
+.scrolltotopbtn {
+    animation: movebtn 3s linear infinite;
+    transition: all 0.5s ease-in-out;
+}
+@keyframes movebtn {
+    0%,100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(10px);
+    }
+}
 .containeur {
     padding-inline: 90px;
     max-width: 1440px;
@@ -82,7 +97,7 @@ nav {
     display: grid;
     grid-template-columns: 0.5fr 1fr;
 }
-.customgrid{
+.customgrid {
     grid-template-columns: 1fr 0.2fr;
 }
 .smoothanimation {
@@ -92,7 +107,8 @@ nav {
     .containeur {
         padding-inline: 50px;
     }
-    .owngrid , .customgrid{
+    .owngrid,
+    .customgrid {
         grid-template-columns: 1fr;
     }
 }

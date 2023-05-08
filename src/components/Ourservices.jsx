@@ -1,10 +1,10 @@
 import React from 'react';
 import Secondcard from './Secondcard';
-import imageserviceone from '../assets/backgroundtransformationdigitale.jpg';
+import imageserviceone from '../assets/transformatondigitale.png';
 import imageservicetwo from '../assets/datamanageback.jpeg';
-import imageservicethree from '../assets/cameraimg.jpg';
-import imageservicefour from '../assets/networkback.jpeg';
-import imageservicefive from '../assets/learningbackimg.jpg';
+import imageservicethree from '../assets/videosurveillance.png';
+import imageservicefour from '../assets/reseau.png';
+import imageservicefive from '../assets/formation.png';
 
 import { Fade, Zoom } from 'react-awesome-reveal';
 

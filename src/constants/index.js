@@ -70,7 +70,7 @@ export const employee = [
         nom: 'Ragner Lothbrok',
         position: 'Senior Cloud Architect',
         description:
-            'Ragner, SVP of Engineering, oversees Elixir’s vast engineering organization which drives the core programming.',
+            'Ragner, SVP of Engineering, oversees Elixir’s vast engineering organization which .',
     },
     {
         id: 'employee4',
@@ -97,7 +97,7 @@ export const employee = [
         nom: 'Ragner Lothbrok',
         position: 'Chief of Technologie Office',
         description:
-            'Ragner, SVP of Engineering, oversees Elixir’s vast engineering organization which drives the core programming.',
+            'Ragner, SVP of Engineering, oversees Elixir’s vast engineering organization which drives .',
     },
 ];
 
@@ -215,12 +215,11 @@ export const descriptionitems = [
 export const descriptionnetwork = [
     {
         id: 'descriptionone',
-        content: 'La réduction des coûts d\'infrastructure',
+        content: "La réduction des coûts d'infrastructure",
     },
     {
         id: 'descriptiontwo',
-        content:
-            ' L\'amélioration de l\'efficacité des opérations',
+        content: " L'amélioration de l'efficacité des opérations",
     },
     {
         id: 'descriptionthree',
@@ -229,15 +228,13 @@ export const descriptionnetwork = [
     },
     {
         id: 'descriptionfour',
-        content:
-            'La collaboration en temps réel',
+        content: 'La collaboration en temps réel',
     },
     {
         id: 'descriptionfive',
-        content: ' L\'amélioration de la communication et de la coordination entre les utilisateurs et les services',
+        content:
+            " L'amélioration de la communication et de la coordination entre les utilisateurs et les services",
     },
-   
-  
 ];
 export const descriptionformation = [
     {
@@ -256,19 +253,17 @@ export const descriptionformation = [
     },
     {
         id: 'descriptionfour',
-        content:
-            'Gérer les sauvegardes et les restaurations de données',
+        content: 'Gérer les sauvegardes et les restaurations de données',
     },
     {
         id: 'descriptionfive',
-        content: 'Gérer les demandes d\'assistance technique des utilisateurs',
+        content: "Gérer les demandes d'assistance technique des utilisateurs",
     },
     {
         id: 'descriptionsix',
-        content: '•	Mettre en place des mesures de sécurité informatique pour protéger les données et les systèmes.',
+        content:
+            '•	Mettre en place des mesures de sécurité informatique pour protéger les données et les systèmes.',
     },
-   
-  
 ];
 
 export const featurewebdevelopment = [
@@ -302,55 +297,100 @@ export const projectitem = [
         id: 'projectitem1',
         image: `${projectimg1}`,
         categorie: 'applicationweb',
-        name: 'OpenExam',
+        name: `Développement d'une plateforme de gestion de projet `,
+        description: `DAGSTRA a développé une plateforme de gestion de projet pour aider les entreprises à suivre leurs projets, à gérer les tâches et à collaborer efficacement. La plateforme est facile à utiliser et personnalisable en fonction des besoins de l'entreprise.`,
     },
     {
         id: 'projectitem2',
         image: `${projectimg2}`,
         categorie: 'applicationweb',
-        name: 'SILEX',
+        name: `Solution de cybersécurité `,
+        description: `DAGSTRA a conçu une solution de cybersécurité complète pour protéger les données sensibles des entreprises. La solution comprend des pares-feux, des antivirus, des logiciels de détection des intrusions et des solutions de sauvegarde et de récupération.`,
     },
     {
         id: 'projectitem3',
         image: `${projectimg3}`,
         categorie: 'applicationweb',
-        name: 'DSF Generator',
+        name: `Solution d'analyse de données `,
+        description: `DAGSTRA a créé une solution d'analyse de données qui permet aux entreprises de collecter, de stocker, de gérer et d'analyser de grandes quantités de données. La solution permet aux entreprises de prendre des décisions éclairées en utilisant des informations exploitables.`,
     },
     {
         id: 'projectitem4',
         image: `${projectimg4}`,
         categorie: 'applicationmobile',
-        name: 'UPGESCO',
+        name: `Plateforme de commerce électronique `,
+        description: `DAGSTRA a développé une plateforme de commerce électronique complète pour aider les entreprises à vendre leurs produits en ligne. La plateforme comprend des fonctionnalités de paiement en ligne, de gestion des commandes et de suivi des expéditions.`,
     },
     {
         id: 'projectitem5',
         image: `${projectimg5}`,
         categorie: 'applicationmobile',
-        name: 'SAMLET',
+        name: `Solution de gestion de la relation client`,
+        description: `DAGSTRA a conçu une solution de gestion de la relation client qui permet aux entreprises de suivre les interactions avec les clients, de gérer les plaintes et de fournir un service client exceptionnel.`,
     },
     {
         id: 'projectitem6',
         image: `${projectimg6}`,
         categorie: 'siteweb',
         name: 'MOBILE PARTNER',
+        description: ` Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quod labore exercitationem,
+        doloremque, maxime possimus nulla cupiditate
+        expedita eum natus ex ipsam at nisi officiis
+        iure provident distinctio recusandae porro quis.
+        Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quod labore exercitationem,
+        doloremque, maxime possimus nulla cupiditate
+        expedita eum natus ex ipsam at nisi officiis
+        iure provident distinctio recusandae porro quis.`,
     },
     {
         id: 'projectitem7',
         image: `${projectimg7}`,
         categorie: 'siteweb',
         name: 'IZIWAY',
+        description: ` Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quod labore exercitationem,
+        doloremque, maxime possimus nulla cupiditate
+        expedita eum natus ex ipsam at nisi officiis
+        iure provident distinctio recusandae porro quis.
+        Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quod labore exercitationem,
+        doloremque, maxime possimus nulla cupiditate
+        expedita eum natus ex ipsam at nisi officiis
+        iure provident distinctio recusandae porro quis.`,
     },
     {
         id: 'projectitem8',
         image: `${projectimg8}`,
         categorie: 'siteweb',
         name: 'GLOBEED',
+        description: ` Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quod labore exercitationem,
+        doloremque, maxime possimus nulla cupiditate
+        expedita eum natus ex ipsam at nisi officiis
+        iure provident distinctio recusandae porro quis.
+        Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quod labore exercitationem,
+        doloremque, maxime possimus nulla cupiditate
+        expedita eum natus ex ipsam at nisi officiis
+        iure provident distinctio recusandae porro quis.`,
     },
     {
         id: 'projectitem9',
         image: `${projectimg9}`,
         categorie: 'siteweb',
         name: 'SCHOOLGOOD',
+        description: ` Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quod labore exercitationem,
+        doloremque, maxime possimus nulla cupiditate
+        expedita eum natus ex ipsam at nisi officiis
+        iure provident distinctio recusandae porro quis.
+        Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Quod labore exercitationem,
+        doloremque, maxime possimus nulla cupiditate
+        expedita eum natus ex ipsam at nisi officiis
+        iure provident distinctio recusandae porro quis.`,
     },
 ];
 

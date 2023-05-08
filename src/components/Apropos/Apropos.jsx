@@ -3,6 +3,7 @@ import Footer from '../Footer';
 import Bannernoslide from '../Bannernoslide';
 import logo from '../../assets/background-15.jpg';
 import Title from '../Title';
+import ButtonScrollToTop from '../ButtonScrollToTop';
 import { Fade } from 'react-awesome-reveal';
 function Apropos() {
     return (
@@ -232,6 +233,7 @@ function Apropos() {
             </section>
 
             <Footer />
+            <ButtonScrollToTop></ButtonScrollToTop>
         </>
     );
 }

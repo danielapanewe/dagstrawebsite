@@ -24,7 +24,7 @@ function Counter() {
                 <h2 className="text-3xl lg:text-5xl font-bold text-white uppercase">
                     Nos chiffres-clé
                 </h2>
-                <div className="grid grid-cols-2  lg:grid-cols-4">
+                <div className="grid grid-cols-2  lg:grid-cols-4 gap-y-6">
                     <p className="text-white flex flex-col ">
                       <span  className="text-4xl font-bold text-white ">
                         +
@@ -39,7 +39,7 @@ function Counter() {
                         )}
                       </span>
 
-                        <span className="text-normal ">Cases resolved</span>
+                        <span className="text-normal ">Cas résolus</span>
                     </p>
                     <p className="text-white flex flex-col">
                         <span   className="text-4xl font-bold text-white">+
@@ -54,7 +54,7 @@ function Counter() {
                         )}
                         </span>
 
-                        <span>Trainee expert</span>
+                        <span>Formateurs </span>
                     </p>
                     <p className="text-white flex flex-col">
                        <span className="text-4xl font-bold text-white">+

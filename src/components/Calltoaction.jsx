@@ -8,7 +8,7 @@ function Calltoaction({text}) {
                     {text}
                 </p>
                 <NavLink to="/Contact" className="btn bg-white text-primarycolor">
-                    Contact Us
+                     Contacter
                 </NavLink>
             </div>
         </section>

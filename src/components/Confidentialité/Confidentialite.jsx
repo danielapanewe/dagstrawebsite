@@ -1,6 +1,7 @@
 import Menu from '../Menu';
 import Footer from '../Footer';
 import Title from '../Title';
+import ButtonScrollToTop from '../ButtonScrollToTop';
 
 function Confidentialite() {
     return (
@@ -51,36 +52,18 @@ function Confidentialite() {
                 </h3>
                 <div>
                     <p>
-                        En tant que société éditrice du site internet
-                        www.viseo.com, VISEO (la « Société » ou « VISEO »)
-                        accorde de l’importance au respect de votre vie privée
-                        et tient à vous fournir des informations via notre
-                        Politique de Confidentialité. Cette page vous fournit
-                        les informations sur la manière dont VISEO traite vos
-                        données personnelles et vos droits par rapport à ces
-                        données personnelles : <br /> Si vous avez des questions
-                        concernant la confidentialité des données, veuillez
-                        adresser vos questions à l’adresse suivante :
-                        dpo@viseo.com. Si vous avez des questions sur nos
-                        actions marketing, veuillez vous adresser à
-                        contact@viseo.com. Dans tous les cas, vous pouvez nous
-                        contacter en utilisant le formulaire « Contactez-nous ».{' '}
-                        <br /> Le but principal du site web www.VISEO.com est
-                        d’être une ressource et un outil commercial dynamique
-                        pour vous aider à mieux connaître le groupe VISEO. Nous
-                        tenons à ce que vous vous sentiez en sécurité lorsque
-                        vous consultez notre site web et nous nous engageons à
-                        préserver vos informations personnelles lors de vos
-                        visites sur ce site.
-                        <br /> Le responsable de traitement des données
-                        personnelles traitées dans le cadre du présent site
-                        internet (à l’exclusion du traitement réalisé par les
-                        tiers via les cookies tiers et auxquels ce site renvoie)
-                        est VISEO, société par actions simplifiée, dont le siège
-                        social est 94/96 rue de Paris, 92100
-                        BOULOGNE-BILLANCOURT, immatriculée sous le numéro 793
-                        288 010 RCS Nanterre, représentée par son Président,
-                        Monsieur Olivier Dhonte.
+                        Nous avons rédigé cette déclaration de protection des
+                        données (version 11.12.2019-311135153) afin de vous
+                        expliquer conformément aux dispositions du règlement
+                        général sur la protection des données (UE) 2016/679
+                        quelles informations nous collectons, comment nous
+                        utilisons les données et quelle décision -faire les
+                        options dont vous disposez en tant que visiteur de ce
+                        site Web. Malheureusement, c'est dans la nature des
+                        choses que ces explications semblent très techniques,
+                        mais nous avons essayé de décrire les choses les plus
+                        importantes aussi simplement et clairement que possible
+                        lors de leur création.
                     </p>
                 </div>
             </section>
@@ -91,11 +74,9 @@ function Confidentialite() {
                 <div>
                     La présente politique de confidentialité (la « Politique de
                     Confidentialité ») fait partie intégrante des conditions
-                    générales d’utilisation du site www.viseo.com (le « Site
-                    Internet »). Elle vise à vous fournir toutes les
+                    générales d’utilisation de notre site. Elle vise à vous fournir toutes les
                     informations pertinentes relatives au traitement des données
-                    à caractère personnel (ci-après les « Données Personnelles
-                    ») vous concernant et décrit les modalités de collecte,
+                    à caractère personnel vous concernant et décrit les modalités de collecte,
                     d'enregistrement et de traitement des Données Personnelles
                     obtenues lors de la consultation ou de l’inscription sur le
                     Site Internet, dans le cadre de notre processus de
@@ -108,7 +89,7 @@ function Confidentialite() {
                 </h3>
                 <div>
                     <p>
-                        VISEO s’engage pour que les Données Personnelles vous
+                       DAGSTRA s’engage pour que les Données Personnelles vous
                         concernant soient obtenues et traitées loyalement et
                         licitement et de façon transparente, soient collectées
                         pour des finalités déterminées et licites, soient
@@ -153,7 +134,7 @@ function Confidentialite() {
                         administratif, support fonctionnel ou ressources
                         humaines, etc…). Compte tenu de notre organisation, nous
                         pouvons être amenés à partager vos Données Personnelles
-                        avec d’autres sociétés du Groupe VISEO, dans les mêmes
+                        avec d’autres sociétés du Groupe DAGSTRA, dans les mêmes
                         conditions. <br />
                         Nous pouvons aussi être amenés à partager vos Données
                         Personnelles à nos partenaires éditeurs avec lesquelles
@@ -178,7 +159,7 @@ function Confidentialite() {
                 </h3>
                 <div>
                     <p>
-                        VISEO ne conserve vos Données personnelles que pendant
+                        DAGSTRA ne conserve vos Données personnelles que pendant
                         la durée nécessaire relative à la finalité du traitement
                         ou pour répondre à des obligations légales. Concernant
                         les actions commerciales, marketing et communication,
@@ -192,6 +173,7 @@ function Confidentialite() {
                 </div>
             </section>
             <Footer />
+            <ButtonScrollToTop></ButtonScrollToTop>
         </>
     );
 }

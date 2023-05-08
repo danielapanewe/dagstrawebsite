@@ -1,4 +1,4 @@
-import logoblanc from '../assets/noname.png';
+import logoblanc from '../assets/logoblanc.png';
 import { NavLink } from 'react-router-dom';
 
 function Footer() {
@@ -10,9 +10,9 @@ function Footer() {
                         <img
                             src={logoblanc}
                             alt="logo entreprise"
-                            className="w-[80%]"
+                            className="w-[45%]"
                         />
-                        <p className="pt-4 text-sm ">
+                        <p className="pt-1 text-sm ">
                             DAGSTRA est une entreprise de TI spécialisée dans
                             le développement de logiciels pour les entreprises.
                         </p>
@@ -187,7 +187,7 @@ function Footer() {
 
             <div className=" mt-6 footer__secondpart text-white text-xs py-4 text-center font-light  bg-[#141b47]">
                 <p className="containeur">
-                    {' '}
+                   
                     Copyright &copy; 2023 DAGSTRA Cameroun SARL
                 </p>
             </div>

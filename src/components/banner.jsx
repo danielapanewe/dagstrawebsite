@@ -1,15 +1,15 @@
 import React from 'react';
 import { Fade } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css';
-import imagebannerone from '../assets/backgroundtransformationdigitale.jpg';
-import imagebannertwo from '../assets/cameraimg.jpg';
-import imagebannerthree from '../assets/learningbackimg.jpg';
+import imagebannerone from '../assets/transformatondigitale.png';
+import imagebannertwo from '../assets/videosurveillance.png';
+import imagebannerthree from '../assets/formation.png';
 import { NavLink } from 'react-router-dom';
 
 const fadeImages = [
     {
         url: `${imagebannerone}`,
-        title: ' Votre partenaire pour une transformation numérique réussie',
+        title: ' BUSINESS, PEOPLE , TECHNOLOGY ',
         description:
             ' Nous vous aidons à amener votre entreprise vers de nouveaux sommets.',
         linktext: ' Contacter',
@@ -39,7 +39,7 @@ const Banner = () => {
                         <div
                             className={` w-full h-[100vh] grid items-center justify-start customgrid `}
                             style={{
-                                backgroundImage: `linear-gradient(#1c276565,#1c276565) ,url(${fadeImage.url})`,
+                                backgroundImage: `linear-gradient(#1c2765dc,#1c276565) ,url(${fadeImage.url})`,
                                 backgroundPosition: 'center',
                                 backgroundRepeat: 'no-repeat',
                                 backgroundSize: 'cover',

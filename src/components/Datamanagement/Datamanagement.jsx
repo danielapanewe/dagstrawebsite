@@ -8,6 +8,7 @@ import { featuresCamera } from '../../constants';
 import backgroundimg from '../../assets/datamanageback.jpeg';
 import Servicestransformationdigital from '../Servicestransformationdigital';
 import { Fade } from 'react-awesome-reveal';
+import ButtonScrollToTop from '../ButtonScrollToTop';
 
 function Datamanagement() {
     return (
@@ -86,6 +87,7 @@ function Datamanagement() {
             </section>
 
             <Footer />
+            <ButtonScrollToTop></ButtonScrollToTop>
         </>
     );
 }

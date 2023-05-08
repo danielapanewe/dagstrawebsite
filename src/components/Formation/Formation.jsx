@@ -7,6 +7,7 @@ import aboutlearningimg from '../../assets/aboutlearning.png';
 import Cardwithtitle from '../Cardwithtitle';
 import Testimonial from '../Testimonial';
 import Calltoaction from '../Calltoaction';
+import ButtonScrollToTop from '../ButtonScrollToTop';
 import { formations, descriptionitems, testimonyslider } from '../../constants';
 function Formation() {
     return (
@@ -33,6 +34,7 @@ function Formation() {
             <Testimonial slides={testimonyslider} />
 
             <Footer />
+            <ButtonScrollToTop></ButtonScrollToTop>
         </>
     );
 }

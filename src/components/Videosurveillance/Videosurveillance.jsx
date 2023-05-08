@@ -8,6 +8,7 @@ import Whycamera from '../Whycamera';
 import Testimonial from '../Testimonial';
 import { testimonyslider, descriptionitems } from '../../constants';
 import cameraimgtwo from '../../assets/cameraimg2.png';
+import ButtonScrollToTop from '../ButtonScrollToTop';
 
 function Videosurveillance() {
     return (
@@ -54,6 +55,7 @@ function Videosurveillance() {
             />
             <Testimonial slides={testimonyslider} />
             <Footer />
+            <ButtonScrollToTop></ButtonScrollToTop>
         </>
     );
 }
