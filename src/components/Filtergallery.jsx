@@ -131,16 +131,16 @@ const Filtergallery = () => {
                 </div>
             </div>
 
-            <div className=" project__containeur containeur grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+            <div className=" project__containeur containeur grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 gap-y-8">
                 {filterImages().map((image, index) => (
                     <div className=" relative" key={index}>
                         <img
                             src={image.image}
                             alt={image.name}
-                            className="w-full"
+                            className="w-[50%]"
                         />
                         <i
-                            className="uil uil-info-circle absolute bottom-0 right-0 p-1 text-3xl text-primarycolor bg-white cursor-pointer hover:text-textcolor"
+                            className="uil uil-info-circle absolute bottom-0 right-[30%] p-1 text-3xl text-primarycolor bg-white cursor-pointer hover:text-textcolor"
                             onClick={() => handleImageClick(image)}
                         ></i>
                     </div>

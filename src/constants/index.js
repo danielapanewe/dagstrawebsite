@@ -1,17 +1,27 @@
-import imageemployeeone from '../assets/portrait-3.jpg';
-import imageemployeetwo from '../assets/portrait-4.jpg';
-import imageemployeethree from '../assets/portrait-5.jpg';
-import imagecamera2 from '../assets/cameraimg2.png';
+import imageemployeeone from '../assets/employee1.png';
+import imageemployeetwo from '../assets/employee2.png';
+import imageemployeethree from '../assets/employee3.png';
+import imageemployeefour from '../assets/employee4.png';
+import imageemployeefive from '../assets/employee5.png';
+import imageemployeesix from '../assets/employee6.png';
+import imageemployeeseven from '../assets/employee7.png';
 import learningcourseimg from '../assets/learningcourse.jpg';
-import projectimg1 from '../assets/Rea/project1.jpg';
-import projectimg2 from '../assets/Rea/project2.jpg';
-import projectimg3 from '../assets/Rea/project3.jpg';
-import projectimg4 from '../assets/Rea/project4.jpg';
-import projectimg5 from '../assets/Rea/project5.jpg';
-import projectimg6 from '../assets/Rea/project6.jpg';
-import projectimg7 from '../assets/Rea/project7.png';
-import projectimg8 from '../assets/Rea/project8.jpg';
-import projectimg9 from '../assets/Rea/project9.jpg';
+import learningcourse2 from '../assets/logicieldentreprise.png';
+import learningcourse3 from '../assets/devmobile.jpg';
+import learningcourse4 from '../assets/news2.jpg';
+import learningcourse6 from '../assets/datamanageback.jpeg';
+import learningcourse7 from '../assets/news1.jpg';
+import projectimg1 from '../assets/Rea/gestion-de-projet.png';
+import projectimg2 from '../assets/Rea/la-cyber-securite.png';
+import projectimg3 from '../assets/Rea/une-analyse.png';
+import projectimg4 from '../assets/Rea/e-commerce.png';
+import projectimg5 from '../assets/Rea/poignee-de-main.png';
+import projectimg6 from '../assets/Rea/ressources-humaines.png';
+import projectimg7 from '../assets/Rea/soins-de-sante.png';
+import projectimg8 from '../assets/Rea/videosurveillance.png';
+import projectimg9 from '../assets/Rea/gestion-de-la-chaine-logistique.png';
+import projectimg10 from '../assets/Rea/contenu.png';
+import projectimg11 from '../assets/Rea/chef-de-projet.png';
 
 export const featuresItem = [
     {
@@ -49,55 +59,51 @@ export const employee = [
         id: 'employee1',
         image: `${imageemployeeone}`,
         alt: 'employé 1',
-        nom: 'Legartha Mantana',
+        nom: 'Olivier',
         position: 'Fullstack Developer',
-        description:
-            'As General Counsel of Elixir, Tony oversees global legal activities and policies across all aspects.',
+        description: `Son rôle est concevoir et de développer les applications web en travaillant sur tous les aspets du développement tant front-end que back-end.`,
     },
+
     {
         id: 'employee2',
         image: `${imageemployeetwo}`,
         alt: 'employé 1',
-        nom: 'John Snow',
-        position: 'Senior Project Manager',
-        description:
-            'John has overseen the meteoric growth while protecting scaling its uniquely creative and culture.',
+        nom: 'Hermine',
+        position: 'Senior Cloud Architect',
+        description: `Son rôle est de concevoir et de superviser l'architecture des systèmes informatiques basés sur le cloud pour les entreprises en veillant à la sécurité a l'évolution des systèmes.`,
     },
     {
         id: 'employee3',
         image: `${imageemployeethree}`,
         alt: 'employé 1',
-        nom: 'Ragner Lothbrok',
-        position: 'Senior Cloud Architect',
-        description:
-            'Ragner, SVP of Engineering, oversees Elixir’s vast engineering organization which .',
+        nom: 'Antoinne',
+        position: 'Senior Enterprise Architect',
+        description: `Son rôle est de concevoir et superviser l'architecture informatique globale d'une entreprise en veillant à l'alignement de la stratégie informatique avec la stratégie globale de l'entreprise.`,
     },
+
     {
         id: 'employee4',
-        image: `${imageemployeetwo}`,
+        image: `${imageemployeefour}`,
         alt: 'employé 1',
-        nom: 'John Snow',
-        position: 'Senior Enterprise Architect',
-        description:
-            'John has overseen the meteoric growth while protecting scaling its uniquely creative and culture.',
+        nom: 'Christian',
+        position: 'Senior Big Data Engineering',
+        description: `Son rôle est de concevoir et de gérer l'infrastructure de données d'une entreprise en utilisant des outils et des technologies de pointe pour stocker, traiter et analyser de grandes quantités de données de manière efficace et évolutive.`,
     },
     {
         id: 'employee5',
-        image: `${imageemployeeone}`,
+        image: `${imageemployeefive}`,
         alt: 'employé 1',
-        nom: 'Legartha Mantana',
-        position: 'Senior Big Data Engineering',
-        description:
-            'As General Counsel of Elixir, Tony oversees global legal activities and policies across all aspects.',
+        nom: 'Joseph',
+        position: 'Chief of Technologie Office',
+        description: `Son rôle est de superviser la stratégie technologique d'une entreprise et veiller à ce que les initiatives technologiques soient alignées sur les objectifs commerciaux d'entreprise.`,
     },
     {
         id: 'employee6',
-        image: `${imageemployeethree}`,
+        image: `${imageemployeesix}`,
         alt: 'employé 1',
-        nom: 'Ragner Lothbrok',
-        position: 'Chief of Technologie Office',
-        description:
-            'Ragner, SVP of Engineering, oversees Elixir’s vast engineering organization which drives .',
+        nom: 'Lucas',
+        position: 'Senior Project Manager',
+        description: `Son rôle est gérer les projets de grandes envergures et assurer leur réussite.`,
     },
 ];
 
@@ -106,25 +112,60 @@ export const formations = [
         id: 'course1',
         image: `${learningcourseimg}`,
         alt: 'formation 1',
-        nom: '$149.00',
-        position: 'Brand Management Consultant',
-        description: 'Web Design & Development Course for Beginners',
+        nom: '150 000FCFA (3 mois)',
+        position: 'Avec stage en entreprise',
+        description: 'Marketing Digital',
+    },
+
+    {
+        id: 'course7',
+        image: `${learningcourse7}`,
+        alt: 'formation 7',
+        nom: '150 000FCFA (3 mois)',
+        position: 'Avec stage en entreprise',
+        description: 'Business Intelligence',
+    },
+    {
+        id: 'course5',
+        image: `${learningcourseimg}`,
+        alt: 'formation 5',
+        nom: '150 000FCFA (3 mois)',
+        position: 'Avec stage en entreprise',
+        description: 'Linux, Ubuntu',
+    },
+    {
+        id: 'course6',
+        image: `${learningcourse6}`,
+        alt: 'formation 6',
+        nom: '150 000FCFA (3 mois)',
+        position: 'Avec stage en entreprise',
+        description: 'Big Data',
+    },
+
+    {
+        id: 'course3',
+        image: `${learningcourse3}`,
+        alt: 'formation 3',
+        nom: '150 000FCFA (3 mois)',
+        position: 'Avec stage en entreprise',
+        description: "Développement d'applications mobiles avec Flutter",
+    },
+
+    {
+        id: 'course4',
+        image: `${learningcourse4}`,
+        alt: 'formation 4',
+        nom: '150 000FCFA (3 mois)',
+        position: 'Avec stage en entreprise',
+        description: 'Gestion de projets avec Scrum, ITIL, PMP',
     },
     {
         id: 'course2',
-        image: `${learningcourseimg}`,
+        image: `${learningcourse2}`,
         alt: 'formation 2',
-        nom: '$149.00',
-        position: 'Business Analyst',
-        description: 'Web Design & Development Course for Beginners',
-    },
-    {
-        id: 'course3',
-        image: `${learningcourseimg}`,
-        alt: 'formation 3',
-        nom: '$149.00',
-        position: 'Business Consultant',
-        description: 'Web Design & Development Course for Beginners',
+        nom: '150 000FCFA (3 mois)',
+        position: 'Avec stage en entreprise',
+        description: 'Création de sites web professionnels sous Wordpress',
     },
 ];
 
@@ -158,22 +199,23 @@ export const featuresCamera = [
 
 export const testimonyslider = [
     {
+        id: 'jeanettedejean',
+        image: `${imageemployeethree}`,
+        nameperson: 'Waffo Jean',
+        avis: `Je suis extêmement satisfait du travail effectué par cette entreprise. Ils ont fait preuve d'un grand engagement envers la qualité et la satisfaction du client, en travaillant avec moi à chaque étape pour s'assurer que mes besoins étaient satisfaits. Je recommande fortement cette entreprise à quiconque cherche un partenaire fiable et dévoué pour ses projets.`,
+    },
+    {
         id: 'kamgabertin',
         image: `${imageemployeethree}`,
         nameperson: 'Kamga Bertin',
-        avis: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem alias ut provident sapiente repellendus.',
+        avis: `J'ai été très impressionné par le niveau de service et d'attention aux détails fournis par l'équipe de cette entreprise. Ils se sont vraiment engagés à fournir un produit de haute qualité et à s'assurer que j'étais satisfait à chaque étape du processus. Je recommande fortement leurs services à quiconque cherche à travailler avec une entreprise qui met les clients au premier plan.`,
     },
-    {
-        id: 'jeanettedejean',
-        image: `${imageemployeethree}`,
-        nameperson: 'Jeanette de Jean',
-        avis: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem alias ut provident sapiente repellendus.',
-    },
+
     {
         id: 'magnetagne',
         image: `${imageemployeethree}`,
-        nameperson: 'Magne Tagne',
-        avis: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt voluptatem alias ut provident sapiente repellendus.',
+        nameperson: 'Celest Martin',
+        avis: `Je suis vraiment reconnaissant envers l'équipe de cette entreprise pour leur engagement envers la qualité et la satisfaction du client. Ils ont travaillé dur pour s'assurer que mes besoins étaient satisfaits et que le produit final était exactement ce que je cherchais. Leur attention aux détails et leur professionnalisme ont vraiment été appréciés. Je recommande vivement leurs services à tous ceux qui cherchent un partenaire fiable et de qualité pour leurs projets.`,
     },
 ];
 
@@ -317,80 +359,73 @@ export const projectitem = [
     {
         id: 'projectitem4',
         image: `${projectimg4}`,
-        categorie: 'applicationmobile',
+        categorie: 'applicationweb',
         name: `Plateforme de commerce électronique `,
         description: `DAGSTRA a développé une plateforme de commerce électronique complète pour aider les entreprises à vendre leurs produits en ligne. La plateforme comprend des fonctionnalités de paiement en ligne, de gestion des commandes et de suivi des expéditions.`,
     },
     {
         id: 'projectitem5',
         image: `${projectimg5}`,
-        categorie: 'applicationmobile',
+        categorie: 'applicationweb',
         name: `Solution de gestion de la relation client`,
         description: `DAGSTRA a conçu une solution de gestion de la relation client qui permet aux entreprises de suivre les interactions avec les clients, de gérer les plaintes et de fournir un service client exceptionnel.`,
     },
     {
         id: 'projectitem6',
         image: `${projectimg6}`,
-        categorie: 'siteweb',
-        name: 'MOBILE PARTNER',
-        description: ` Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quod labore exercitationem,
-        doloremque, maxime possimus nulla cupiditate
-        expedita eum natus ex ipsam at nisi officiis
-        iure provident distinctio recusandae porro quis.
-        Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quod labore exercitationem,
-        doloremque, maxime possimus nulla cupiditate
-        expedita eum natus ex ipsam at nisi officiis
-        iure provident distinctio recusandae porro quis.`,
+        categorie: 'applicationweb',
+        name: 'Système de gestion des ressources humaines',
+        description: ` DAGSTRA a développé un système de gestion des ressources humaines pour une entreprise de 500 employés, permettant une gestion efficace des données relatives aux employés, des feuilles de temps et des congés payés.`,
     },
     {
         id: 'projectitem7',
         image: `${projectimg7}`,
-        categorie: 'siteweb',
-        name: 'IZIWAY',
-        description: ` Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quod labore exercitationem,
-        doloremque, maxime possimus nulla cupiditate
-        expedita eum natus ex ipsam at nisi officiis
-        iure provident distinctio recusandae porro quis.
-        Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quod labore exercitationem,
-        doloremque, maxime possimus nulla cupiditate
-        expedita eum natus ex ipsam at nisi officiis
-        iure provident distinctio recusandae porro quis.`,
+        categorie: 'applicationmobile',
+        name: 'Application mobile de suivi de la condition physique ',
+        description: `DAGSTRA a dévellopé une application mobile de suivi de la condition physique pour une entreprise de santé, permettant aux utilisateurs de suivre leur activité physique, leur nutrition et leur sommeil`,
     },
     {
         id: 'projectitem8',
         image: `${projectimg8}`,
-        categorie: 'siteweb',
-        name: 'GLOBEED',
-        description: ` Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quod labore exercitationem,
-        doloremque, maxime possimus nulla cupiditate
-        expedita eum natus ex ipsam at nisi officiis
-        iure provident distinctio recusandae porro quis.
-        Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quod labore exercitationem,
-        doloremque, maxime possimus nulla cupiditate
-        expedita eum natus ex ipsam at nisi officiis
-        iure provident distinctio recusandae porro quis.`,
+        categorie: 'videosurveillance',
+        name: 'Système de surveillance vidéo',
+        description: `DAGSTRA a mis en place un système de surveillance vidéo pour une entreprise de sécurité, permettant une surveillance en temps réel des sites critiques et des alertes automatisées en cas d'activité suspecte.`,
     },
     {
         id: 'projectitem9',
+        image: `${projectimg1}`,
+        categorie: 'applicationweb',
+        name: 'Système de gestion de projet',
+        description: `DAGSTRA a crée un système de gestion de projet pour une entreprise de construction, permettant une planification et une coordination efficace des ressources, des échéances et des budgets de projet.`,
+    },
+    {
+        id: 'projectitem10',
         image: `${projectimg9}`,
-        categorie: 'siteweb',
-        name: 'SCHOOLGOOD',
-        description: ` Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quod labore exercitationem,
-        doloremque, maxime possimus nulla cupiditate
-        expedita eum natus ex ipsam at nisi officiis
-        iure provident distinctio recusandae porro quis.
-        Lorem ipsum dolor sit amet consectetur
-        adipisicing elit. Quod labore exercitationem,
-        doloremque, maxime possimus nulla cupiditate
-        expedita eum natus ex ipsam at nisi officiis
-        iure provident distinctio recusandae porro quis.`,
+        categorie: 'applicationweb',
+        name: 'Système de gestion de chaîne d\'approvisionnement',
+        description: `DAGSTRA a mis en place d'un système de gestion de la chaîne d'approvisionnement pour une entreprise de fabrication, améliorant la visibilité et la traçabilité de la chaîne d'approvisionnement de bout en bout.`,
+    },
+    {
+        id: 'projectitem11',
+        image: `${projectimg10}`,
+        categorie: 'applicationweb',
+        name: 'Système de gestion de Contenu',
+        description: `DAGSTRA a développé un système de gestion de contenu pour une entreprise de médias, permettant une gestion facile et efficace des articles, des vidéos et des images.`,
+    },
+    {
+        id: 'projectitem12',
+        image: `${projectimg11}`,
+        categorie: 'applicationweb',
+        name: 'Système de gestion des opérations',
+        description: `DAGSTRA a développé un système de gestion des opérations pour une entreprise de logistique, permettant une planification et une exécution efficaces des opérations de transport et de distribution.
+        `,
+    },
+    {
+        id: 'projectitem13',
+        image: `${projectimg4}`,
+        categorie: 'applicationweb',
+        name: `Plateforme de commerce électronique `,
+        description: `DAGSTRA a développé une plateforme de commerce électronique pour une entreprise de vente au détail, avec une interface conviviale et un système de paiement sécurisé.`,
     },
 ];
 
@@ -398,5 +433,5 @@ export const projectbtnnav = [
     { id: 'btn1', name: 'Tout', value: 'tout' },
     { id: 'btn2', name: 'Applications Web', value: 'applicationweb' },
     { id: 'btn3', name: 'Applications Mobile', value: 'applicationmobile' },
-    { id: 'btn4', name: 'Sites Web', value: 'siteweb' },
+    { id: 'btn4', name: 'Video Surveillance', value: 'videosurveillance' },
 ];

@@ -21,7 +21,7 @@ function Home() {
             <Ourservices />
             <Whychooseus />
             <Calltoaction
-                text={` Si vous avez besoin de nos services... nous sommes disponibles`}
+                text={` Si vous avez besoin d'aide, n'hésitez pas à nous contacter. Nous sommes là pour vous aider`}
             />
             <Cardwithtitle title={`NOTRE EQUIPE`} cardcontent={employee} />
             <Counter />

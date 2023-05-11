@@ -15,21 +15,21 @@ function Menu() {
                             name="location"
                             class="text-white text-base"
                         ></ion-icon>
-                        <span>1010 Avenue, New York, NY 10018 US.</span>
+                        <span>Douala-Akwa, en face ancien Boulangerie Saker</span>
                     </p>
                     <p className="text-white font-semibold text-xs flex items-center gap-1">
                         <ion-icon
                             name="call"
                             class="text-white text-base"
                         ></ion-icon>
-                        <a href="tel:699999999" className='hover:underline'>699 99 99 99</a>
+                        <a href="tel:+4915231918349" className='hover:underline'>+49 152 3191 8349</a>
                     </p>
                     <p className="text-white font-semibold text-xs flex items-center gap-1">
                         <ion-icon
                             name="time"
                             class="text-white text-base"
                         ></ion-icon>
-                        <span>Lun-Ven,8.00-18.00</span>
+                        <span>Lun-Ven,8.00-17.00</span>
                     </p>
                 </div>
             </div>
@@ -179,7 +179,7 @@ function Menu() {
                                                 : 'hover:text-[#6a6796] font-normal  text-md'
                                         }
                                     >
-                                        Formation
+                                        Formations
                                     </NavLink>
                                 </li>
                             </ul>

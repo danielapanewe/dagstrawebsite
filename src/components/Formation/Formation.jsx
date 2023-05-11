@@ -8,22 +8,22 @@ import Cardwithtitle from '../Cardwithtitle';
 import Testimonial from '../Testimonial';
 import Calltoaction from '../Calltoaction';
 import ButtonScrollToTop from '../ButtonScrollToTop';
-import { formations, descriptionitems, testimonyslider } from '../../constants';
+import { formations, descriptionformation, testimonyslider } from '../../constants';
 function Formation() {
     return (
         <>
             <Menu />
             <Bannernoslide
                 image={learning}
-                text={`FORMATION`}
-                navigation={`Services >> Formation`}
+                text={`FORMATIONS`}
+                navigation={`Services >> Formations`}
                 stylebackimg={`bg-center`}
             />
             <Whycamera
                 title={`LES FORMATIONS CHEZ DAGSTRA`}
                 image={aboutlearningimg}
                 thintextone={`Les objectifs de la formation en service informatique sont de fournir aux individus les compétences et les connaissances nécessaires pour être capables de :`}
-                descriptionfeature={descriptionitems}
+                descriptionfeature={descriptionformation}
                 thintextwo={` La formation en service informatique est un élément important pour les individus qui cherchent à travailler dans le domaine de l'informatique, en particulier dans le domaine du service informatique. Elle fournit aux apprenants les compétences et les connaissances nécessaires pour gérer et maintenir les systèmes informatiques et les réseaux, ainsi que pour résoudre les problèmes techniques.`}
                 stylescontainer={`mt-12`}
                 stylestitle={`text-primarycolor after:bg-primarycolor`}

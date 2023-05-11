@@ -73,7 +73,7 @@ function Form() {
                         </div>
                         <a
                             href="mailto:info@cm.dagstra.com"
-                            className="flex items-center"
+                            className="flex items-center pb-4"
                         >
                             <div>
                                 <svg
@@ -103,8 +103,13 @@ function Form() {
                                 info@cm.dagstra.com
                             </p>
                         </a>
+
+                        <p className="text-white text-base">
+                            Boîte postale : 15.289
+                        </p>
                         <p className="text-lg text-white pt-10 tracking-wide">
-                            Moosweg 3, 51377 <br /> Leverkusen, Allemagne
+                            Douala - Akwa, <br /> en face ancien Boulangerie
+                            Saker
                         </p>
                     </div>
                 </div>

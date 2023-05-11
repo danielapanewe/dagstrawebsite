@@ -85,7 +85,7 @@ function Counter() {
                         )}
                        </span>
 
-                        <span>Année d expérience</span>
+                        <span>Années d'expérience</span>
                     </p>
                 </div>
             </div>

@@ -73,8 +73,7 @@ function Footer() {
                                     class="text-white text-base"
                                 ></ion-icon>
                                 <span>
-                                    Moosweg 3, 51377 <br /> Leverkusen,
-                                    Allemagne
+                                    Douala - Akwa, en face <br /> ancien Boulangerie Saker
                                 </span>
                             </p>
                         </div>

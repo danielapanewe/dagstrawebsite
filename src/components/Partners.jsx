@@ -13,13 +13,13 @@ function Partners() {
                 <h2 className="title text-#6a6a6a text-center mb-8 after:bg-[#6a6a6a]">
                     Ils nous font confiance
                 </h2>
-                <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-8 items-center ">
-                    <img src={logo1} alt="logo de ..." />
+                <div className="flex items-center justify-center gap-10">
+                    <img src={logo1} alt="logo de ..." className="w-[10%] grayscale" />
                     <img src={logo2} alt="logo de ..." />
-                    <img src={logo3} alt="logo de ..." />
+                    {/* <img src={logo3} alt="logo de ..." />
                     <img src={logo4} alt="logo de ..." />
                     <img src={logo5} alt="logo de ..." />
-                    <img src={logo6} alt="logo de ..." />
+                    <img src={logo6} alt="logo de ..." /> */}
                 </div>
             </div>
         </section>
