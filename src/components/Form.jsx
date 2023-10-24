@@ -114,6 +114,7 @@ function Form() {
                     </div>
                 </div>
                 <div className=" bg-gray-200 h-full pt-5 pb-5 xl:pr-5 xl:pl-0 rounded-tr rounded-br">
+                    
                     <form
                         ref={form}
                         onSubmit={sendEmail}

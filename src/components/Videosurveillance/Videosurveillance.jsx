@@ -40,7 +40,7 @@ function Videosurveillance() {
             />
             <Camerafeature />
             <Whycamera
-                title={`POURQUOI CHOISIR NOS VIDEO SURVEILLANCE`}
+                title={`POURQUOI CHOISIR NOS VIDEOS SURVEILLANCE`}
                 image={cameraimgtwo}
                 boldtextone={`Dissuader, surveiller et agir sont les 3 principaux objectifs de tout système de vidéosurveillance.`}
                 thintextone={` Nos solutions sont donc conçues afin d’apporter une réponse simple et sécuritaire à toutes les problématiques que vous rencontrez quel que soit votre secteur`}

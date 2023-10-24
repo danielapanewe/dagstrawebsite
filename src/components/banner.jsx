@@ -46,7 +46,7 @@ const Banner = () => {
                             }}
                         >
                             <div className="containeur flex flex-col gap-4  ">
-                                <h2 className="font-bold text-4xl  lg:text-5xl text-white pl-4 sm:pl-0">
+                                <h2 className="font-bold text-3xl  lg:text-5xl text-white pl-4 sm:pl-0">
                                     {fadeImage.title}
                                 </h2>
                                 <p className="text-white font-medium text-lg pl-4 sm:pl-0">

@@ -43,7 +43,7 @@ function Testimonial({ slides }) {
                                     <img
                                         alt="Man"
                                         src={slideitem.image}
-                                        className="h-16 w-16 rounded-full object-cover"
+                                        className="h-16 w-16 rounded-full object-cover bg-left"
                                     />
 
                                     <div>

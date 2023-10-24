@@ -4,7 +4,6 @@ import imageemployeethree from '../assets/employee3.png';
 import imageemployeefour from '../assets/employee4.png';
 import imageemployeefive from '../assets/employee5.png';
 import imageemployeesix from '../assets/employee6.png';
-import imageemployeeseven from '../assets/employee7.png';
 import learningcourseimg from '../assets/learningcourse.jpg';
 import learningcourse2 from '../assets/logicieldentreprise.png';
 import learningcourse3 from '../assets/devmobile.jpg';
@@ -200,7 +199,7 @@ export const featuresCamera = [
 export const testimonyslider = [
     {
         id: 'jeanettedejean',
-        image: `${imageemployeethree}`,
+        image: `${imageemployeeone}`,
         nameperson: 'Waffo Jean',
         avis: `Je suis extêmement satisfait du travail effectué par cette entreprise. Ils ont fait preuve d'un grand engagement envers la qualité et la satisfaction du client, en travaillant avec moi à chaque étape pour s'assurer que mes besoins étaient satisfaits. Je recommande fortement cette entreprise à quiconque cherche un partenaire fiable et dévoué pour ses projets.`,
     },
@@ -213,7 +212,7 @@ export const testimonyslider = [
 
     {
         id: 'magnetagne',
-        image: `${imageemployeethree}`,
+        image: `${imageemployeeone}`,
         nameperson: 'Celest Martin',
         avis: `Je suis vraiment reconnaissant envers l'équipe de cette entreprise pour leur engagement envers la qualité et la satisfaction du client. Ils ont travaillé dur pour s'assurer que mes besoins étaient satisfaits et que le produit final était exactement ce que je cherchais. Leur attention aux détails et leur professionnalisme ont vraiment été appréciés. Je recommande vivement leurs services à tous ceux qui cherchent un partenaire fiable et de qualité pour leurs projets.`,
     },

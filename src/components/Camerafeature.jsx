@@ -7,7 +7,7 @@ function Camerafeature() {
             <div className="containeur">
                 <Zoom triggerOnce>
                     <h2 className="title text-primarycolor text-center">
-                        LES AVANTAGES DE NOS VIDEO SURVEILLANCE
+                        LES AVANTAGES DE NOS VIDEOS SURVEILLANCE
                     </h2>
                 </Zoom>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center mt-12">
